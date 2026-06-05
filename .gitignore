@@ -1,0 +1,46 @@
+# Ignore the contents of the _site directory and other cache directories
+_site/
+.sass-cache/
+
+# Ignore the directory for local files during development
+local/
+
+# Ignore the Gemfile that is generated
+Gemfile.lock
+
+# Ignore files created by npm
+node_modules
+package-lock.json
+
+# Ignore the vendor file at root level and bundle for alternative installation
+/vendor/
+.bundle/
+
+# Ignore folders related to IDEs
+.vscode/
+
+# Ignore files created by MacOS
+.DS_Store
+
+# 用户原始 CV 文件（含手机号等 PII，仅本地保留）
+简历/
+
+# 私有研究材料（独立 git repo，见 my private materials/.git/）
+my private materials/
+
+# LaTeX intermediate files (cv/ has its own .gitignore but belt-and-suspenders)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# 个人 plan 文件（外部生成，不进 repo）
+.claude/
+
+# 百度云同步元数据
+.baiduyun.uploading.cfg
+*.baiduyun.uploading.cfg
+*.baiduyun.downloading.cfg

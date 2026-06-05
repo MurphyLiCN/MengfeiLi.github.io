@@ -1,0 +1,209 @@
+/* ==========================================================================
+   HOME PAGE
+   ========================================================================== */
+
+.splash .page__content {
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.home-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 2.25rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.home-profile__kicker {
+  margin: 0 0 0.45rem;
+  color: var(--global-base-color);
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  font-weight: 700;
+}
+
+.home-profile h1 {
+  margin: 0;
+  color: var(--global-text-color);
+  font-size: 2.15rem;
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+
+.home-profile h1 span {
+  display: inline-block;
+  margin-left: 0.35rem;
+  color: #6f777d;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.home-profile__affiliation {
+  margin: 0.45rem 0 1.05rem;
+  color: var(--global-text-color);
+  font-family: $sans-serif;
+  font-size: $type-size-5;
+}
+
+.home-profile__summary {
+  max-width: 42rem;
+  margin-bottom: 0.75rem;
+  color: var(--global-text-color);
+  line-height: 1.65;
+}
+
+.home-profile__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  margin-top: 1rem;
+  font-family: $sans-serif;
+}
+
+.home-profile__links a,
+.home-section__more a {
+  color: var(--global-link-color);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(82, 173, 200, 0.45);
+
+  &:hover {
+    color: var(--global-link-color-hover);
+    border-bottom-color: var(--global-link-color-hover);
+    text-decoration: none;
+  }
+}
+
+.home-profile__portrait {
+  justify-self: end;
+  margin: 0;
+}
+
+.home-profile__portrait img {
+  display: block;
+  width: 240px;
+  max-width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center 38%;
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+  box-shadow: 0 10px 24px rgba(40, 54, 61, 0.12);
+}
+
+.home-section {
+  margin: 2rem 0;
+}
+
+.home-section h2 {
+  margin: 0 0 0.85rem;
+  padding-bottom: 0.45rem;
+  color: var(--global-text-color);
+  font-size: $type-size-4;
+  line-height: 1.25;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.home-section--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.72fr);
+  gap: 2.25rem;
+}
+
+.home-publication-list {
+  margin: 0;
+  padding-left: 1.35rem;
+}
+
+.home-publication-list li {
+  margin-bottom: 0.95rem;
+  padding-left: 0.15rem;
+  line-height: 1.55;
+}
+
+.home-publication-list li::marker {
+  color: var(--global-base-color);
+  font-weight: 700;
+}
+
+.home-publication-list a,
+.home-publication-list strong {
+  color: var(--global-text-color);
+  font-weight: 700;
+}
+
+.home-publication-list span {
+  display: block;
+  margin-top: 0.18rem;
+  color: rgba(73, 78, 82, 0.78);
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+}
+
+.home-compact-list {
+  margin: 0;
+  padding-left: 1.05rem;
+}
+
+.home-compact-list li {
+  margin-bottom: 0.55rem;
+  line-height: 1.5;
+}
+
+.home-section__more {
+  margin: 0.7rem 0 0;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+}
+
+@include breakpoint(max-width $large) {
+  .splash .page__content {
+    max-width: 760px;
+  }
+
+  .home-profile {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+
+  .home-profile__portrait {
+    order: -1;
+    justify-self: start;
+  }
+
+  .home-profile__portrait img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home-section--split {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@include breakpoint(max-width $small) {
+  .home-profile {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .home-profile h1 {
+    font-size: 1.75rem;
+  }
+
+  .home-profile h1 span {
+    display: block;
+    margin-top: 0.2rem;
+    margin-left: 0;
+  }
+
+  .home-profile__portrait img {
+    width: 160px;
+    height: 160px;
+  }
+}

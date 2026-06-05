@@ -1,0 +1,56 @@
+{%- comment -%}
+  JSON-LD Person schema for SEO.
+  Tells Google: this site = a real person (Mengfei Li / 李梦飞) at Fudan University,
+  with these alternate names + sameAs links to verified academic profiles.
+  Boosts ranking when people search any name variant.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mengfei Li",
+  "alternateName": [
+    "Li Mengfei",
+    "李梦飞",
+    "M. Li",
+    "Li, M."
+  ],
+  "givenName": "Mengfei",
+  "familyName": "Li",
+  "jobTitle": "PhD Candidate in Management Science",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "School of Management, Fudan University",
+    "url": "https://www.fdsm.fudan.edu.cn/en/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Shanghai",
+      "addressCountry": "CN"
+    }
+  },
+  "knowsAbout": [
+    "AI-based Empirical Operations Management",
+    "Causal Machine Learning",
+    "Structural Model Estimation",
+    "Manufacturing Efficiency",
+    "Supply Chain Resilience"
+  ],
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "email": "mailto:{{ site.author.email }}",
+  "sameAs": [
+    {%- if site.author.ssrn -%}{{ site.author.ssrn | jsonify }},{%- endif %}
+    {%- if site.author.googlescholar -%}{{ site.author.googlescholar | jsonify }},{%- endif %}
+    {%- if site.author.orcid -%}{{ site.author.orcid | jsonify }},{%- endif %}
+    {%- if site.author.researchgate -%}{{ site.author.researchgate | jsonify }},{%- endif %}
+    {%- if site.author.github -%}{{ "https://github.com/" | append: site.author.github | jsonify }}{%- endif %}
+  ]
+}
+</script>
+
+{%- comment -%}Multi-name meta tags so search engines and academic bots can match common name variants{%- endcomment -%}
+<meta name="author" content="Mengfei Li">
+<meta name="DC.creator" content="Mengfei Li">
+<meta name="DC.creator" content="Li Mengfei">
+<meta name="DC.creator" content="李梦飞">
+<meta name="citation_author" content="Li, Mengfei">
+<meta name="citation_author_institution" content="Fudan University, School of Management">

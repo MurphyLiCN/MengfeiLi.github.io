@@ -1,0 +1,19 @@
+# 顶部导航条
+
+main:
+  - title: "Home"
+    url: /
+
+  - title: "Research"
+    url: /publications/
+
+  - title: "Talks"
+    url: /talks/
+
+  # Teaching: hidden from nav (2026-05-12) — TA work, not actual teaching.
+  # Uncomment the two lines below to re-enable.
+  # - title: "Teaching"
+  #   url: /teaching/
+
+  - title: "CV"
+    url: /cv/

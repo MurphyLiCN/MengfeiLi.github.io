@@ -1,0 +1,24 @@
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+
+# Editor backups
+*~
+*.swp
+.DS_Store
+
+# Built PDF lives at the repo root via `make publish`; keep cv.pdf locally too
+# but it's gitignored to avoid double-tracking
+cv.pdf

@@ -1,0 +1,9 @@
+---
+layout: null
+sitemap: false
+# Front matter triggers Jekyll to render this with Liquid so {{ site.url }} works.
+---
+User-agent: *
+Allow: /
+
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml

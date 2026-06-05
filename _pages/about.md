@@ -1,0 +1,79 @@
+---
+layout: splash
+permalink: /
+title: "李梦飞"
+author_profile: false
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+{% include base_path %}
+
+<div class="home-profile">
+  <div class="home-profile__content">
+    <p class="home-profile__kicker">PhD Candidate in Management Science</p>
+    <h1>Mengfei Li <span>李梦飞</span></h1>
+    <p class="home-profile__affiliation">School of Management, Fudan University</p>
+    <p class="home-profile__summary">
+      I am a PhD candidate in Management Science at the School of Management, Fudan University, advised by Prof. Xiaole Wu. My research focuses on AI-based empirical operations management, with interests in causal machine learning, structural model estimation, manufacturing efficiency, supply chain resilience, and data-driven operational decision making.
+    </p>
+    <p class="home-profile__summary">
+      From September to December 2024, I visited the Operations &amp; Decision Technologies group at the Kelley School of Business, Indiana University, hosted by Prof. Wenchang Zhang.
+    </p>
+    <nav class="home-profile__links" aria-label="Profile links">
+      <a href="mailto:mfli22@m.fudan.edu.cn">Email</a>
+      <a href="{{ base_path }}/files/cv.pdf">CV</a>
+      <a href="{{ base_path }}/publications/">Research</a>
+      <a href="{{ base_path }}/talks/">Talks</a>
+      <a href="https://github.com/MurphyLiCN">GitHub</a>
+    </nav>
+  </div>
+  <figure class="home-profile__portrait">
+    <img src="{{ base_path }}/images/profile.jpg" alt="Mengfei Li" width="360" height="360" loading="eager" decoding="async" fetchpriority="high">
+  </figure>
+</div>
+
+<section class="home-section" aria-labelledby="research-heading">
+  <h2 id="research-heading">Research</h2>
+  <ol class="home-publication-list">
+    <li>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783">Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions</a>
+      <span>with Ji Huang and Shuai Shao; listed in alphabetical order. ACL 2026 Findings.</span>
+    </li>
+    <li>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302">Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency</a>
+      <span>with Wenchang Zhang, Cheng Yue, Ming Liu, and Xiaole Wu. Revise and resubmit at <em>Management Science</em>.</span>
+    </li>
+    <li>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942">供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL）</a>
+      <span>Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss. With Xiaole Wu, Yang Chen, and Jinyan Zhu. Third-round review at <em>Journal of Management Sciences in China</em>.</span>
+    </li>
+    <li>
+      <strong>A Structural Forest Estimation of Heterogeneous Newsvendor Models</strong>
+      <span>with Guihua Wang and Wenchang Zhang. Working paper.</span>
+    </li>
+  </ol>
+  <p class="home-section__more"><a href="{{ base_path }}/publications/">Full research list</a></p>
+</section>
+
+<section class="home-section home-section--split" aria-label="Talks and contact">
+  <div>
+    <h2>Recent Talks</h2>
+    <ul class="home-compact-list">
+      <li><strong>2025 INFORMS International Meeting</strong>, Singapore, July 2025</li>
+      <li><strong>35th POMS Annual Conference</strong>, Atlanta, USA, May 2025</li>
+      <li><strong>Workshop on Empirical Operations Management</strong>, Hong Kong, China, January 2025</li>
+      <li><strong>2024 INFORMS Annual Meeting</strong>, Seattle, USA, October 2024</li>
+    </ul>
+    <p class="home-section__more"><a href="{{ base_path }}/talks/">Full talks list</a></p>
+  </div>
+  <div>
+    <h2>Contact</h2>
+    <ul class="home-compact-list">
+      <li><strong>Email:</strong> <a href="mailto:mfli22@m.fudan.edu.cn">mfli22@m.fudan.edu.cn</a></li>
+      <li><strong>Affiliation:</strong> School of Management, Fudan University, Shanghai</li>
+      <li><strong>CV:</strong> <a href="{{ base_path }}/cv/">web version</a> · <a href="{{ base_path }}/files/cv.pdf">PDF</a></li>
+    </ul>
+  </div>
+</section>

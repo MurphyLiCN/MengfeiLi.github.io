@@ -1,0 +1,14 @@
+---
+layout: archive
+title: "Teaching"
+permalink: /teaching/
+author_profile: true
+# Hidden from build (2026-05-18) — TA work, not actual teaching; removed from nav previously.
+# Set published: true to re-enable.
+published: false
+sitemap: false
+---
+
+{% for post in site.teaching reversed %}
+  {% include archive-single.html %}
+{% endfor %}
