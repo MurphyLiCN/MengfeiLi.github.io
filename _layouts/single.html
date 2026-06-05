@@ -39,8 +39,6 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.collection == 'publications' and page.venue %}
-          <p>{{ page.venue }}{% if page.date %}, {{ page.date | date: "%Y" }}{% endif %}</p>
         {% elsif page.venue and page.date %}
           <p><i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
@@ -56,13 +54,13 @@ layout: default
           <p style="font-size: smaller">
             {% assign has_download_link = false %}
             {% if paperurl != "" %}
-              <a href="{{ paperurl }}" target="_blank" rel="noopener noreferrer">Paper</a>{% assign has_download_link = true %}
+              <a href="{{ paperurl }}" target="_blank" rel="noopener noreferrer">Download Paper</a>{% assign has_download_link = true %}
             {% endif %}
             {% if slidesurl != "" %}
-              {% if has_download_link %} | {% endif %}<a href="{{ slidesurl }}" target="_blank" rel="noopener noreferrer">Slides</a>{% assign has_download_link = true %}
+              {% if has_download_link %} | {% endif %}<a href="{{ slidesurl }}" target="_blank" rel="noopener noreferrer">Download Slides</a>{% assign has_download_link = true %}
             {% endif %}
             {% if bibtexurl != "" %}
-              {% if has_download_link %} | {% endif %}<a href="{{ bibtexurl }}" target="_blank" rel="noopener noreferrer">BibTeX</a>
+              {% if has_download_link %} | {% endif %}<a href="{{ bibtexurl }}" target="_blank" rel="noopener noreferrer">Download Bibtex</a>
             {% endif %}
           </p>
         {% endif %}
