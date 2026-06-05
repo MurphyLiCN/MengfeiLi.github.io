@@ -2,13 +2,13 @@
 layout: splash
 permalink: /
 title: "李梦飞"
-author\_profile: false
-redirect\_from:
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
 
-{% include base\_path %}
+{% include base_path %}
 
 <div class="home-profile">
   <div class="home-profile__content">
