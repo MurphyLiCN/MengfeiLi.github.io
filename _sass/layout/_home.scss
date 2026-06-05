@@ -37,16 +37,29 @@
 .home-profile h1 span {
   display: inline-block;
   margin-left: 0.35rem;
-  color: #6f777d;
+  color: var(--global-text-color-light);
   font-size: 1.25rem;
   font-weight: 500;
 }
 
 .home-profile__affiliation {
-  margin: 0.45rem 0 1.05rem;
+  margin: 0.45rem 0 0.75rem;
   color: var(--global-text-color);
   font-family: $sans-serif;
   font-size: $type-size-5;
+}
+
+.home-profile__market {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.35rem 0.6rem;
+  color: var(--global-text-color);
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  line-height: 1.35;
+  background: rgba(82, 173, 200, 0.1);
+  border: 1px solid rgba(82, 173, 200, 0.28);
+  border-radius: 6px;
 }
 
 .home-profile__summary {
@@ -139,9 +152,14 @@
 .home-publication-list span {
   display: block;
   margin-top: 0.18rem;
-  color: rgba(73, 78, 82, 0.78);
+  color: var(--global-text-color-light);
   font-family: $sans-serif;
   font-size: $type-size-6;
+}
+
+.home-publication-list__links a {
+  color: var(--global-link-color);
+  font-weight: 700;
 }
 
 .home-compact-list {
