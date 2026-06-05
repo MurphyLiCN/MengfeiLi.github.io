@@ -9,18 +9,20 @@ redirect_from:
 ---
 
 {% include base_path %}
-{% assign featured_publications = site.publications | where: "featured", true | sort: "featured_order" %}
 
 <div class="home-profile">
   <div class="home-profile__content">
-    <p class="home-profile__kicker">AI-based Empirical Operations Management</p>
+    <p class="home-profile__kicker">PhD Candidate in Management Science</p>
     <h1>Mengfei Li <span>李梦飞</span></h1>
-    <p class="home-profile__affiliation">PhD Candidate in Management Science, School of Management, Fudan University</p>
-    <p class="home-profile__market">
-      On the <strong>2026-2027 academic job market</strong> for tenure-track positions in Operations Management.
+    <p class="home-profile__affiliation">School of Management, Fudan University</p>
+    <p class="home-profile__summary">
+      I am a PhD candidate in Management Science at the <a href="https://www.fdsm.fudan.edu.cn/en/" target="_blank" rel="noopener noreferrer">School of Management, Fudan University</a>, advised by <a href="https://www.fdsm.fudan.edu.cn/En/2025/1106/c1052a24525/page.htm" target="_blank" rel="noopener noreferrer"><strong>Prof. Xiaole Wu</strong></a>. I was a visiting PhD student at the Operations &amp; Decision Technologies group at the <a href="https://kelley.iu.edu/index.html" target="_blank" rel="noopener noreferrer">Kelley School of Business, Indiana University</a> (Sep - Dec 2024), hosted by <a href="https://kelley.iu.edu/faculty-research/faculty-directory/profile.html?id=WENCZHAN" target="_blank" rel="noopener noreferrer">Prof. Wenchang Zhang</a>. My research lies in <strong>AI-based empirical operations management</strong>.
     </p>
     <p class="home-profile__summary">
-      I study how AI, causal machine learning, and structural model estimation can improve empirical operations research. My work focuses on manufacturing learning, operational consistency, supply chain resilience, and data-driven decision models.
+      In 2026, I was honored with the title of <strong>Fudan University’s Annual “Outstanding Student Model”</strong>, which is awarded to only 10 Ph.D. students annually. I am the <strong>PI</strong> (principal investigator) of the NSFC (National Natural Science Foundation of China) Young Student Basic Research Project (Doctoral Students), <i>“Integrating Causal Machine Learning and Structural Model Estimation: Theory and Optimization Applications,”</i> from January 2025 to December 2027. 
+    </p>
+    <p class="home-profile__summary">
+      I will be on the <strong>2026–2027</strong> academic job market for tenure-track positions in Operations Management.
     </p>
     <nav class="home-profile__links" aria-label="Profile links">
       <a href="mailto:mfli22@m.fudan.edu.cn">Email</a>
@@ -37,33 +39,38 @@ redirect_from:
 </div>
 
 <section class="home-section" aria-labelledby="research-heading">
-  <h2 id="research-heading">Featured Research</h2>
-  {% if featured_publications.size > 0 %}
+  <h2 id="research-heading">Research</h2>
   <ol class="home-publication-list">
-    {% for post in featured_publications %}
     <li>
-      <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
-      <span>{{ post.venue }}{% if post.excerpt %}. {{ post.excerpt }}{% endif %}</span>
-      {% assign paperurl = post.paperurl | default: "" | strip %}
-      {% if paperurl != "" %}
-        <span class="home-publication-list__links"><a href="{{ paperurl }}" target="_blank" rel="noopener noreferrer">SSRN</a></span>
-      {% endif %}
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783" target="_blank" rel="noopener noreferrer">Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions</a>
+      <span>with Ji Huang and Shuai Shao; listed in alphabetical order. ACL 2026 Findings (CCF-A).</span>
     </li>
-    {% endfor %}
+    <li>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302" target="_blank" rel="noopener noreferrer">Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency</a>
+      <span>with Wenchang Zhang, Cheng Yue, Ming Liu, and Xiaole Wu. Revise and resubmit at <em>Management Science</em>.</span>
+    </li>
+    <li>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942" target="_blank" rel="noopener noreferrer">供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL）</a>
+      <span>Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss. With Xiaole Wu, Yang Chen, and Jinyan Zhu. Third-round review at <em>管理科学学报 (Journal of Management Sciences in China)</em>.</span>
+    </li>
+    <li>
+      <strong>A Structural Forest Estimation of Heterogeneous Newsvendor Models</strong>
+      <span>with Guihua Wang and Wenchang Zhang. Working paper.</span>
+    </li>
   </ol>
-  {% endif %}
   <p class="home-section__more"><a href="{{ base_path }}/publications/">Full research list</a></p>
 </section>
 
-<section class="home-section home-section--split" aria-label="Profile highlights and contact">
+<section class="home-section home-section--split" aria-label="Talks and contact">
   <div>
-    <h2>Profile Highlights</h2>
+    <h2>Recent Talks</h2>
     <ul class="home-compact-list">
-      <li><strong>Advisor:</strong> <a href="https://www.fdsm.fudan.edu.cn/En/2025/1106/c1052a24525/page.htm" target="_blank" rel="noopener noreferrer">Prof. Xiaole Wu</a>, School of Management, Fudan University</li>
-      <li><strong>Principal Investigator</strong>, NSFC Young Student Basic Research Project, Jan 2025 - Dec 2027</li>
-      <li><strong>Outstanding Student Model</strong>, Fudan University, 2025</li>
-      <li><strong>Visiting PhD Student</strong>, <a href="https://kelley.iu.edu/index.html" target="_blank" rel="noopener noreferrer">Kelley School of Business, Indiana University</a>, hosted by <a href="https://kelley.iu.edu/faculty-research/faculty-directory/profile.html?id=WENCZHAN" target="_blank" rel="noopener noreferrer">Prof. Wenchang Zhang</a>, Sep - Dec 2024</li>
+      <li><strong>2025 INFORMS International Meeting</strong>, Singapore, July 2025</li>
+      <li><strong>35th POMS Annual Conference</strong>, Atlanta, USA, May 2025</li>
+      <li><strong>Workshop on Empirical Operations Management</strong>, Hong Kong, China, January 2025</li>
+      <li><strong>2024 INFORMS Annual Meeting</strong>, Seattle, USA, October 2024</li>
     </ul>
+    <p class="home-section__more"><a href="{{ base_path }}/talks/">Full talks list</a></p>
   </div>
   <div>
     <h2>Contact</h2>
@@ -73,15 +80,4 @@ redirect_from:
       <li><strong>CV:</strong> <a href="{{ base_path }}/cv/">web version</a></li>
     </ul>
   </div>
-</section>
-
-<section class="home-section" aria-labelledby="talks-heading">
-  <h2 id="talks-heading">Recent Talks</h2>
-  <ul class="home-compact-list">
-    <li><strong>2025 INFORMS International Meeting</strong>, Singapore, July 2025</li>
-    <li><strong>35th POMS Annual Conference</strong>, Atlanta, USA, May 2025</li>
-    <li><strong>Workshop on Empirical Operations Management</strong>, Hong Kong, China, January 2025</li>
-    <li><strong>2024 INFORMS Annual Meeting</strong>, Seattle, USA, October 2024</li>
-  </ul>
-  <p class="home-section__more"><a href="{{ base_path }}/talks/">Full talks list</a></p>
 </section>

@@ -7,8 +7,6 @@ excerpt: "Develops a structural forest estimator that embeds the newsvendor opti
 date: 2026-01-01
 venue: "Working Paper"
 paperurl: ""
-featured: true
-featured_order: 4
 ---
 
 ## Abstract
