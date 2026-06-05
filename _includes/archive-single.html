@@ -55,21 +55,17 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% if post.citation or paperurl != "" or slidesurl != "" or bibtexurl != "" %}
+    {% if paperurl != "" or slidesurl != "" or bibtexurl != "" %}
       <p>
-        {% if post.citation %}Recommended citation: {{ post.citation }}{% endif %}
-        {% if paperurl != "" or slidesurl != "" or bibtexurl != "" %}
-          {% if post.citation %}<br />{% endif %}
-          {% assign has_download_link = false %}
-          {% if paperurl != "" %}
-            <a href="{{ paperurl }}">Download Paper</a>{% assign has_download_link = true %}
-          {% endif %}
-          {% if slidesurl != "" %}
-            {% if has_download_link %} | {% endif %}<a href="{{ slidesurl }}">Download Slides</a>{% assign has_download_link = true %}
-          {% endif %}
-          {% if bibtexurl != "" %}
-            {% if has_download_link %} | {% endif %}<a href="{{ bibtexurl }}">Download Bibtex</a>
-          {% endif %}
+        {% assign has_download_link = false %}
+        {% if paperurl != "" %}
+          <a href="{{ paperurl }}">Download Paper</a>{% assign has_download_link = true %}
+        {% endif %}
+        {% if slidesurl != "" %}
+          {% if has_download_link %} | {% endif %}<a href="{{ slidesurl }}">Download Slides</a>{% assign has_download_link = true %}
+        {% endif %}
+        {% if bibtexurl != "" %}
+          {% if has_download_link %} | {% endif %}<a href="{{ bibtexurl }}">Download Bibtex</a>
         {% endif %}
       </p>
     {% endif %}

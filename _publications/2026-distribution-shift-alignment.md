@@ -3,17 +3,12 @@ title: "Distribution Shift Alignment Helps LLMs Simulate Survey Response Distrib
 collection: publications
 category: published-papers
 permalink: /publication/2026-distribution-shift-alignment
-excerpt: "LLM-based simulation of survey response distributions under distribution shift."
+excerpt: "Introduces Distribution Shift Alignment, a two-stage fine-tuning method that learns distribution shifts across respondent backgrounds to improve LLM-based survey simulation."
 date: 2026-01-01
 venue: "ACL 2026 Findings"
 paperurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783"
-citation: "Huang, J., Li, M., & Shao, S. (2026). Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions. ACL 2026 Findings. SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783"
 ---
 
-**Authors:** Ji Huang, Mengfei Li, and Shuai Shao. *(Listed in alphabetical order.)*
+## Abstract
 
-**Status:** Accepted by **ACL 2026 Findings** (CCF-A).
-
-**SSRN:** [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783)
-
-This paper studies how distribution shift alignment can help large language models simulate survey response distributions.
+Large language models (LLMs) offer a promising way to simulate human survey responses, potentially reducing the cost of large-scale data collection. However, existing zero-shot methods suffer from prompt sensitivity and low accuracy, while conventional fine-tuning approaches mostly fit the training set distributions and struggle to produce results more accurate than the training set itself, which deviates from the original goal of using LLMs to simulate survey responses. Building on this observation, we introduce Distribution Shift Alignment (DSA), a two-stage fine-tuning method that aligns both the output distributions and the distribution shifts across different backgrounds. By learning how these distributions change rather than fitting training data, DSA can provide results substantially closer to the true distribution than the training data. Empirically, DSA consistently outperforms other methods on five public survey datasets. We further conduct a comprehensive comparison covering accuracy, robustness, and data savings. DSA reduces the required real data by 53.48-69.12%, demonstrating its effectiveness and efficiency in survey simulation.

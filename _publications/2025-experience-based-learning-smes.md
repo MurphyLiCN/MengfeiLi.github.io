@@ -3,17 +3,12 @@ title: "Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing E
 collection: publications
 category: under-review
 permalink: /publication/2025-experience-based-learning-smes
-excerpt: "Empirical study of experience-based learning, manufacturing efficiency, and consistency in SMEs."
-date: 2025-01-01
+excerpt: "Uses order-level ERP data to show how product-specific experience improves both manufacturing efficiency and consistency in SMEs."
+date: 2026-01-01
 venue: "Revise and Resubmit at Management Science"
 paperurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302"
-citation: "Li, M., Zhang, W., Yue, C., Liu, M., & Wu, X. (2025). Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency. Revise and resubmit at Management Science. SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302"
 ---
 
-**Authors:** Mengfei Li, Wenchang Zhang, Cheng Yue, Ming Liu, and Xiaole Wu.
+## Abstract
 
-**Status:** Revise and resubmit at *Management Science*.
-
-**SSRN:** [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302)
-
-This paper examines experience-based learning in small and medium-sized enterprises from the dual perspective of manufacturing efficiency and consistency.
+Small and medium-sized manufacturing enterprises (SMEs) often accumulate operational knowledge through repeated order fulfillment rather than formal improvement programs. This study examines whether product-specific experience improves manufacturing efficiency and consistency, and under what conditions this learning materializes. Using order-level ERP data and instrumental-variable estimation, we analyze end-to-end order-fulfillment time across four stages: procurement, preparation, production, and shipping. We find that experience improves both efficiency and consistency, though the effects vary. Preparation contributes most to total fulfillment time, while production exhibits the highest within-stage learning intensity. Nonparametric learning curves reveal an initial performance dip before sustained gains emerge. Survey-based mechanism evidence indicate that experience converts into performance through stage-specific conditions, including tacit/explicit knowledge, interconnectedness, digitalization, and AI use. Furthermore, learning depends on order context: large orders enhance learning opportunities, whereas urgent orders compress planning slack and attenuate benefits. Incorporating these experience-based capacity dynamics into operational planning can significantly improve profits.

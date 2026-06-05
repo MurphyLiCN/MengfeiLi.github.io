@@ -50,21 +50,17 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {% if page.citation or paperurl != "" or slidesurl != "" or bibtexurl != "" %}
+        {% if paperurl != "" or slidesurl != "" or bibtexurl != "" %}
           <p style="font-size: smaller">
-            {% if page.citation %}Recommended citation: {{ page.citation }}{% endif %}
-            {% if paperurl != "" or slidesurl != "" or bibtexurl != "" %}
-              {% if page.citation %}<br />{% endif %}
-              {% assign has_download_link = false %}
-              {% if paperurl != "" %}
-                <a href="{{ paperurl }}">Download Paper</a>{% assign has_download_link = true %}
-              {% endif %}
-              {% if slidesurl != "" %}
-                {% if has_download_link %} | {% endif %}<a href="{{ slidesurl }}">Download Slides</a>{% assign has_download_link = true %}
-              {% endif %}
-              {% if bibtexurl != "" %}
-                {% if has_download_link %} | {% endif %}<a href="{{ bibtexurl }}">Download Bibtex</a>
-              {% endif %}
+            {% assign has_download_link = false %}
+            {% if paperurl != "" %}
+              <a href="{{ paperurl }}">Download Paper</a>{% assign has_download_link = true %}
+            {% endif %}
+            {% if slidesurl != "" %}
+              {% if has_download_link %} | {% endif %}<a href="{{ slidesurl }}">Download Slides</a>{% assign has_download_link = true %}
+            {% endif %}
+            {% if bibtexurl != "" %}
+              {% if has_download_link %} | {% endif %}<a href="{{ bibtexurl }}">Download Bibtex</a>
             {% endif %}
           </p>
         {% endif %}

@@ -42,7 +42,7 @@ Publications and Manuscripts
 
 * **Mengfei Li**, Guihua Wang, Wenchang Zhang. "A Structural Forest Estimation of Heterogeneous Newsvendor Models."
 * Ji Huang, **Mengfei Li**, Shuai Shao (listed in alphabetical order). "LLMs Simulate Survey Response for Joint Distribution of Multiple Questions."
-* Ziyin Bin, **Mengfei Li**, Zibo Liu, Lezhen Wu, Xiaole Wu (listed in alphabetical order). "A Counterfactual Analysis of Capacity Decision of Photovoltaic Enterprises."
+* Ziyin Bin, **Mengfei Li**, Zibo Liu, Lezhen Wu, Xiaole Wu (listed in alphabetical order). "Competition, Overcapacity, and Consolidation in a Multi-Tier Solar Manufacturing Chain."
 * Zhe Zhang, Handan Shi, **Mengfei Li**. "Little-Treat Consumption: A Qualitative Analysis Using Generative Large Language Models (GLLMs)."
 
 Conference Presentations
