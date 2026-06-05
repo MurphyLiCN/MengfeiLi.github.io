@@ -24,17 +24,21 @@ Education
 Research Interests
 ======
 * AI-based Empirical Operations Management
+* Causal Machine Learning
+* Structural Model Estimation
+* Manufacturing Efficiency and Consistency
+* Supply Chain Resilience
 
-Research Projects
+Research Grants and Projects
 ======
-* **Principal Investigator**, National Natural Science Foundation of China, Young Student Basic Research Project (Doctoral Students), Integrating Causal Machine Learning and Structural Model Estimation: Theory and Optimization Applications, Jan 2025 - Dec 2027
-* Participant, National Natural Science Foundation of China, Major Project, Theoretical Foundations of Supply Chain Resilience and Security, Jan 2023 - Dec 2027
-* Participant, State Grid Shanghai Electric Power Company, management consulting project, Power Grid Supply Chain Network Resilience and Security Analysis Based on the SPOT Framework, Feb 2025 - Feb 2026
-* Participant, China Energy Research Society, research consulting project, Four-tier Structural Model Construction Service Project for the Photovoltaic Industry, Dec 2025 - Dec 2026
+* **Principal Investigator**, NSFC Young Student Basic Research Project (Doctoral Students), *Integrating Causal Machine Learning and Structural Model Estimation: Theory and Optimization Applications*, Jan 2025 - Dec 2027
+* Participant, NSFC Major Project, *Theoretical Foundations of Supply Chain Resilience and Security*, Jan 2023 - Dec 2027
+* Participant, State Grid Shanghai Electric Power Company management consulting project, *Power Grid Supply Chain Network Resilience and Security Analysis Based on the SPOT Framework*, Feb 2025 - Feb 2026
+* Participant, China Energy Research Society research consulting project, *Four-tier Structural Model Construction Service Project for the Photovoltaic Industry*, Dec 2025 - Dec 2026
 
 Publications and Manuscripts
 ======
-**Published**
+**Published / Accepted**
 
 * Ji Huang, **Mengfei Li**, Shuai Shao (listed in alphabetical order). "Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions." **ACL 2026 Findings** (CCF-A). [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783){:target="_blank" rel="noopener noreferrer"}.
 
@@ -67,7 +71,7 @@ Conference Presentations
 * 35th POMS Annual Conference, Atlanta, USA, May 2025
 * 2025 INFORMS International Meeting, Singapore, Jul 2025
 
-Conference Participation
+Selected Conference Participation
 ======
 * NSFC 408th Shuangqing Forum, "Green Computing Service System Management," Beijing, Apr 2025
 
@@ -75,7 +79,7 @@ Academic Service
 ======
 * Anonymous Reviewer, *Journal of Asian Economics*
 
-Books, Data Resources, and Software
+Research Infrastructure, Books, and Software
 ======
 * Participant, National Development and Intelligent Governance Laboratory Basic Research and Visualization Platform, Fudan University
 * Participant, *China Foreign Merchandise Trade and Supply Chain Volatility Index*, Fudan University Global Supply Chain Research Center

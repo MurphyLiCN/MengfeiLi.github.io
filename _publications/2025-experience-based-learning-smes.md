@@ -7,6 +7,8 @@ excerpt: "Uses order-level ERP data to show how product-specific experience impr
 date: 2026-01-01
 venue: "Revise and Resubmit at Management Science"
 paperurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302"
+featured: true
+featured_order: 2
 ---
 
 ## Abstract

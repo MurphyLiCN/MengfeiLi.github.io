@@ -12,7 +12,7 @@ site_theme               : "default" # 可选: "default", "air", "sunrise", "min
 title                    : "Mengfei Li"
 title_separator          : "·"
 name                     : &name "Mengfei Li"
-description              : &description "Mengfei Li (李梦飞) — PhD candidate in Management Science at Fudan University. Research on AI-based empirical operations management, causal machine learning, structural estimation, and supply chain resilience."
+description              : &description "Mengfei Li (李梦飞) — PhD candidate in Management Science at Fudan University and 2026-2027 academic job market candidate. Research in AI-based empirical operations management, causal machine learning, structural estimation, manufacturing learning, and supply chain resilience."
 url                      : "https://murphylicn.github.io"    # current GitHub Pages host; update when a custom domain is configured
 baseurl                  : "/MengfeiLi.github.io"            # project site under MurphyLiCN; set to "" for a user-site repo or custom domain root
 repository               : "MurphyLiCN/MengfeiLi.github.io"
@@ -85,9 +85,9 @@ author:
 # Match the `category:` field in each _publications/*.md
 publication_category:
   published-papers:
-    title: 'Published Papers'
+    title: 'Published / Accepted'
   under-review:
-    title: 'Papers Under Review'
+    title: 'Under Review'
   working-papers:
     title: 'Working Papers'
   # Uncomment / add as career progresses:
@@ -149,7 +149,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : "profile.jpg"   # 用作 Twitter/X、Facebook、Slack 等分享时的预览图
-og_description           : "Mengfei Li (李梦飞) — PhD Candidate in Management Science, Fudan University. Research on AI-based empirical operations management, causal machine learning, structural estimation, and supply chain resilience."
+og_description           : "Mengfei Li (李梦飞) — PhD Candidate in Management Science at Fudan University and 2026-2027 academic job market candidate. Research in AI-based empirical operations management, causal machine learning, structural estimation, manufacturing learning, and supply chain resilience."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
