@@ -2,13 +2,13 @@
 layout: splash
 permalink: /
 title: "李梦飞"
-author_profile: false
-redirect_from:
+author\_profile: false
+redirect\_from:
   - /about/
   - /about.html
 ---
 
-{% include base_path %}
+{% include base\_path %}
 
 <div class="home-profile">
   <div class="home-profile__content">
@@ -19,7 +19,7 @@ redirect_from:
       I am a PhD candidate in Management Science at the <a href="https://www.fdsm.fudan.edu.cn/en/" target="_blank" rel="noopener noreferrer">School of Management, Fudan University</a>, advised by <a href="https://www.fdsm.fudan.edu.cn/En/2025/1106/c1052a24525/page.htm" target="_blank" rel="noopener noreferrer"><strong>Prof. Xiaole Wu</strong></a>. I was a visiting PhD student at the Operations &amp; Decision Technologies group at the <a href="https://kelley.iu.edu/index.html" target="_blank" rel="noopener noreferrer">Kelley School of Business, Indiana University</a> (Sep - Dec 2024), hosted by <a href="https://kelley.iu.edu/faculty-research/faculty-directory/profile.html?id=WENCZHAN" target="_blank" rel="noopener noreferrer">Prof. Wenchang Zhang</a>. My research lies in <strong>AI-based empirical operations management</strong>.
     </p>
     <p class="home-profile__summary">
-      I am the <strong>principal investigator</strong> of the National Natural Science Foundation of China Young Student Basic Research Project (Doctoral Students), “Integrating Causal Machine Learning and Structural Model Estimation: Theory and Optimization Applications,” from January 2025 to December 2027. In 2026, I was honored with the title of Fudan University Outstanding Student Pace-setter (awarded to only 10 Ph.D. students annually).
+      In 2026, I was honored with the title of Fudan University Outstanding Student Pace-setter (awarded to only 10 Ph.D. students annually). I am the <strong>principal investigator</strong> of the National Natural Science Foundation of China Young Student Basic Research Project (Doctoral Students), <i>“Integrating Causal Machine Learning and Structural Model Estimation: Theory and Optimization Applications,”</i> from January 2025 to December 2027. 
     </p>
     <p class="home-profile__summary">
       I will be on the <strong>2026–2027</strong> academic job market for tenure-track positions in Operations Management.
