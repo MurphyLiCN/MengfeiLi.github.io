@@ -51,7 +51,7 @@ redirect_from:
     </li>
     <li>
       <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942" target="_blank" rel="noopener noreferrer">供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL）</a>
-      <span>Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss. With Xiaole Wu, Yang Chen, and Jinyan Zhu. Third-round review at <em>管理科学学报 (Journal of Management Sciences in China)</em>.</span>
+      <span>Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss. With Xiaole Wu, Yang Chen, and Jinyan Zhu. Third-round review at <em>Journal of Management Sciences in China</em>.</span>
     </li>
     <li>
       <strong>A Structural Forest Estimation of Heterogeneous Newsvendor Models</strong>

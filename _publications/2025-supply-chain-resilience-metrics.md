@@ -5,7 +5,7 @@ category: under-review
 permalink: /publication/2025-supply-chain-resilience-metrics
 excerpt: "Proposes Structural Change-Points and Weighted Cumulative Loss as non-parametric metrics for measuring supply chain resilience across the absorb-adapt-recover cycle."
 date: 2026-01-01
-venue: "Third-round review at 管理科学学报 (Journal of Management Sciences in China)"
+venue: "Third-round review at Journal of Management Sciences in China"
 paperurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942"
 ---
 
