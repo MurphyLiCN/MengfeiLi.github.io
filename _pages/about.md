@@ -16,15 +16,16 @@ redirect_from:
     <h1>Mengfei Li <span>李梦飞</span></h1>
     <p class="home-profile__affiliation">School of Management, Fudan University</p>
     <p class="home-profile__summary">
-      I am a PhD candidate in Management Science at the School of Management, Fudan University, advised by Prof. Xiaole Wu. My research focuses on AI-based empirical operations management, with interests in causal machine learning, structural model estimation, manufacturing efficiency, supply chain resilience, and data-driven operational decision making.
+      I am a PhD candidate in Management Science at the <a href="https://www.fdsm.fudan.edu.cn/en/">School of Management, Fudan University</a>, advised by <a href="https://www.fdsm.fudan.edu.cn/En/2025/1106/c1052a24525/page.htm"><strong>Prof. Xiaole Wu</strong></a>. I was a visiting PhD student at the Operations &amp; Decision Technologies group at the <a href="https://kelley.iu.edu/index.html">Kelley School of Business, Indiana University</a>, hosted by <a href="https://kelley.iu.edu/faculty-research/faculty-directory/profile.html?id=WENCZHAN">Prof. Wenchang Zhang</a>. My research lies in <strong>AI-based empirical operations management</strong>. I am the principal investigator of the National Natural Science Foundation of China Young Student Basic Research Project (Doctoral Students), “因果机器学习与结构模型估计的结合理论研究与优化应用,” from January 2025 to December 2027.
     </p>
     <p class="home-profile__summary">
-      From September to December 2024, I visited the Operations &amp; Decision Technologies group at the Kelley School of Business, Indiana University, hosted by Prof. Wenchang Zhang.
+      I will be on the <strong>2026–2027</strong> academic job market for tenure-track positions in Operations Management.
     </p>
     <nav class="home-profile__links" aria-label="Profile links">
       <a href="mailto:mfli22@m.fudan.edu.cn">Email</a>
       <a href="{{ base_path }}/files/cv.pdf">CV</a>
       <a href="{{ base_path }}/publications/">Research</a>
+      <a href="{{ base_path }}/projects/">Projects</a>
       <a href="{{ base_path }}/talks/">Talks</a>
       <a href="https://github.com/MurphyLiCN">GitHub</a>
     </nav>

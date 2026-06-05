@@ -5,25 +5,40 @@
 % Built on Awesome-CV (https://github.com/posquit0/Awesome-CV)
 % Compile: make
 
-\documentclass[11pt, letterpaper]{awesome-cv}
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\documentclass[10pt, letterpaper]{awesome-cv}
+\usepackage{xeCJK}
+\setCJKmainfont{Songti SC}
+\geometry{left=1.35cm, top=.7cm, right=1.35cm, bottom=1.3cm, footskip=.5cm}
 
 \colorlet{awesome}{awesome-darknight}
 \setbool{acvSectionColorHighlight}{true}
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\renewcommand{\acvHeaderAfterSocialSkip}{3mm}
+\renewcommand{\acvHeaderAfterQuoteSkip}{2mm}
+\renewcommand{\acvSectionTopSkip}{2mm}
+\renewcommand{\acvSectionContentTopSkip}{1.5mm}
+
+\newenvironment{cvlist}{%
+  \vspace{\acvSectionContentTopSkip}
+  \begin{itemize}[leftmargin=1.4em, itemsep=.25em, topsep=0pt, parsep=0pt, partopsep=0pt]
+}{%
+  \end{itemize}
+  \vspace{1mm}
+}
+\newcommand{\cvlistitem}[1]{\item \descriptionstyle{#1}}
 
 %-------------------------------------------------------------------------------
 % PERSONAL INFORMATION
 %-------------------------------------------------------------------------------
 \name{Mengfei}{Li}
-\position{PhD Candidate \enskip\cdotp\enskip Management Science}
-\address{School of Management, Fudan University, Shanghai, China \\
-Website: \href{https://murphylicn.github.io/MengfeiLi.github.io/}{murphylicn.github.io/MengfeiLi.github.io}}
+\position{PhD Candidate in Management Science}
+\address{School of Management, Fudan University \enskip\cdotp\enskip Shanghai, China}
 
 % Phone number is intentionally omitted from the public CV.
 \email{mfli22@m.fudan.edu.cn}
+\extrainfo{\href{https://murphylicn.github.io/MengfeiLi.github.io/}{murphylicn.github.io/MengfeiLi.github.io}}
 
-\quote{AI-based Empirical Operations Management \enskip\cdotp\enskip Causal Machine Learning \enskip\cdotp\enskip Structural Estimation}
+\quote{AI-based Empirical Operations Management}
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -78,230 +93,83 @@ Website: \href{https://murphylicn.github.io/MengfeiLi.github.io/}{murphylicn.git
 %-------------------------------------------------------------------------------
 \cvsection{Research Interests}
 \begin{cvparagraph}
-AI-based empirical operations management; causal machine learning; structural model estimation; manufacturing efficiency and consistency; supply chain resilience.
+AI-based Empirical Operations Management.
 \end{cvparagraph}
 
 %-------------------------------------------------------------------------------
 % PUBLICATIONS AND MANUSCRIPTS
 %-------------------------------------------------------------------------------
 \cvsection{Publications and Manuscripts}
-\begin{cventries}
-  \cventry
-    {\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783}{Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions}}
-    {Ji Huang, Mengfei Li, Shuai Shao (listed in alphabetical order)}
-    {}
-    {ACL 2026 Findings (CCF-A)}
-    {}
-
-  \cventry
-    {\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302}{Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency}}
-    {Mengfei Li, Wenchang Zhang, Cheng Yue, Ming Liu, Xiaole Wu}
-    {}
-    {Revise and resubmit at \textit{Management Science}}
-    {}
-
-  \cventry
-    {\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942}{Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss}}
-    {Mengfei Li, Xiaole Wu, Yang Chen, Jinyan Zhu}
-    {}
-    {Third-round review at \textit{Journal of Management Sciences in China}}
-    {}
-
-  \cventry
-    {A Structural Forest Estimation of Heterogeneous Newsvendor Models}
-    {Mengfei Li, Guihua Wang, Wenchang Zhang}
-    {}
-    {Working paper}
-    {}
-
-  \cventry
-    {LLMs Simulate Survey Response for Joint Distribution of Multiple Questions}
-    {Ji Huang, Mengfei Li, Shuai Shao (listed in alphabetical order)}
-    {}
-    {Working paper}
-    {}
-
-  \cventry
-    {A Counterfactual Analysis of Capacity Decision of Photovoltaic Enterprises}
-    {Ziyin Bin, Mengfei Li, Zibo Liu, Lezhen Wu, Xiaole Wu (listed in alphabetical order)}
-    {}
-    {Working paper}
-    {}
-
-  \cventry
-    {Little-Treat Consumption: A Qualitative Analysis Using Generative Large Language Models (GLLMs)}
-    {Zhe Zhang, Handan Shi, Mengfei Li}
-    {}
-    {Working paper}
-    {}
-\end{cventries}
+\begin{cvlist}
+  \cvlistitem{\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783}{\textbf{Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions}}. Ji Huang, \textbf{Mengfei Li}, Shuai Shao (listed in alphabetical order). \textit{ACL 2026 Findings} (CCF-A).}
+  \cvlistitem{\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302}{\textbf{Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency}}. \textbf{Mengfei Li}, Wenchang Zhang, Cheng Yue, Ming Liu, Xiaole Wu. Revise and resubmit at \textit{Management Science}.}
+  \cvlistitem{\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942}{\textbf{Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss}}. \textbf{Mengfei Li}, Xiaole Wu, Yang Chen, Jinyan Zhu. Third-round review at \textit{Journal of Management Sciences in China}.}
+  \cvlistitem{\textbf{A Structural Forest Estimation of Heterogeneous Newsvendor Models}. \textbf{Mengfei Li}, Guihua Wang, Wenchang Zhang. Working paper.}
+  \cvlistitem{\textbf{LLMs Simulate Survey Response for Joint Distribution of Multiple Questions}. Ji Huang, \textbf{Mengfei Li}, Shuai Shao (listed in alphabetical order). Working paper.}
+  \cvlistitem{\textbf{A Counterfactual Analysis of Capacity Decision of Photovoltaic Enterprises}. Ziyin Bin, \textbf{Mengfei Li}, Zibo Liu, Lezhen Wu, Xiaole Wu (listed in alphabetical order). Working paper.}
+  \cvlistitem{\textbf{Little-Treat Consumption: A Qualitative Analysis Using Generative Large Language Models (GLLMs)}. Zhe Zhang, Handan Shi, \textbf{Mengfei Li}. Working paper.}
+\end{cvlist}
 
 %-------------------------------------------------------------------------------
 % CONFERENCE PRESENTATIONS
 %-------------------------------------------------------------------------------
 \cvsection{Conference Presentations}
-\begin{cventries}
-  \cventry
-    {Dissecting the Learning Curve for Supply Chain Efficiency: An Empirical Analysis}
-    {14th POMS-HK International Conference}
-    {Hong Kong, China}
-    {Jan. 2024}
-    {}
-
-  \cventry
-    {Dissecting the Learning Curve for Supply Chain Efficiency: An Empirical Analysis}
-    {16th CSAMSE Conference}
-    {Xiamen, China}
-    {Jul. 2024}
-    {}
-
-  \cventry
-    {Dissecting the Learning Curve for Supply Chain Efficiency: An Empirical Analysis}
-    {2024 INFORMS Annual Meeting}
-    {Seattle, USA}
-    {Oct. 2024}
-    {}
-
-  \cventry
-    {Dissecting the Learning Curve for Supply Chain Efficiency: An Empirical Analysis}
-    {2024 DSI Annual Conference}
-    {Phoenix, USA}
-    {Nov. 2024}
-    {}
-
-  \cventry
-    {Dissecting the Learning Curve for Supply Chain Efficiency: An Empirical Analysis}
-    {15th POMS-HK International Conference}
-    {Hong Kong, China}
-    {Jan. 2025}
-    {}
-
-  \cventry
-    {Dissecting the Learning Curve for Supply Chain Efficiency: An Empirical Analysis}
-    {Workshop on Empirical Operations Management}
-    {Hong Kong, China}
-    {Jan. 2025}
-    {
-      \begin{cvitems}
-        \item {Presentation by the supervisor.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Dissecting the Learning Curve for Supply Chain Efficiency: An Empirical Analysis}
-    {35th POMS Annual Conference}
-    {Atlanta, USA}
-    {May 2025}
-    {}
-
-  \cventry
-    {A Structural Forest Estimation of Heterogeneous Newsvendor Models}
-    {35th POMS Annual Conference}
-    {Atlanta, USA}
-    {May 2025}
-    {}
-
-  \cventry
-    {A Structural Forest Estimation of Heterogeneous Newsvendor Models}
-    {2025 INFORMS International Meeting}
-    {Singapore}
-    {Jul. 2025}
-    {}
-\end{cventries}
+\begin{cvlist}
+  \cvlistitem{\textbf{Dissecting the Learning Curve for Supply Chain Efficiency: An Empirical Analysis}. 14th POMS-HK International Conference, Hong Kong, Jan. 2024; 16th CSAMSE Conference, Xiamen, Jul. 2024; 2024 INFORMS Annual Meeting, Seattle, Oct. 2024; 2024 DSI Annual Conference, Phoenix, Nov. 2024; 15th POMS-HK International Conference, Hong Kong, Jan. 2025; Workshop on Empirical Operations Management, Hong Kong, Jan. 2025 (presentation by the supervisor); 35th POMS Annual Conference, Atlanta, May 2025.}
+  \cvlistitem{\textbf{A Structural Forest Estimation of Heterogeneous Newsvendor Models}. 35th POMS Annual Conference, Atlanta, May 2025; 2025 INFORMS International Meeting, Singapore, Jul. 2025.}
+\end{cvlist}
 
 %-------------------------------------------------------------------------------
 % RESEARCH PROJECTS
 %-------------------------------------------------------------------------------
 \cvsection{Research Projects}
-\begin{cventries}
-  \cventry
-    {Participant}
-    {NSFC Major Project: Theoretical Foundations of Supply Chain Resilience and Security}
-    {}
-    {Jan. 2023 -- Dec. 2027}
-    {}
-
-  \cventry
-    {Principal Investigator}
-    {NSFC Young Student Basic Research Project: Integrating Causal Machine Learning and Structural Model Estimation}
-    {}
-    {Jan. 2025 -- Dec. 2027}
-    {}
-
-  \cventry
-    {Participant}
-    {State Grid Shanghai Electric Power Company Management Consulting Project}
-    {}
-    {Feb. 2025 -- Present}
-    {
-      \begin{cvitems}
-        \item {Power grid supply chain network resilience and security analysis based on the SPOT framework.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Participant}
-    {China Energy Research Society Research Consulting Project}
-    {}
-    {Dec. 2025 -- Dec. 2026}
-    {
-      \begin{cvitems}
-        \item {Four-tier structural model construction service project for the photovoltaic industry.}
-      \end{cvitems}
-    }
-\end{cventries}
+\begin{cvlist}
+  \cvlistitem{\textbf{Jan. 2023 -- Dec. 2027}. Participant, National Natural Science Foundation of China Major Project, ``供应链韧性与安全基础理论'' (Theoretical Foundations of Supply Chain Resilience and Security).}
+  \cvlistitem{\textbf{Jan. 2025 -- Dec. 2027}. Principal Investigator, National Natural Science Foundation of China Young Student Basic Research Project (Doctoral Students), ``因果机器学习与结构模型估计的结合理论研究与优化应用'' (Integrating Causal Machine Learning and Structural Model Estimation: Theory and Optimization Applications).}
+  \cvlistitem{\textbf{Feb. 2025 -- Present}. Participant, State Grid Shanghai Electric Power Company Management Consulting Project, ``基于SPOT框架的电网供应链网络韧性与安全分析'' (Power Grid Supply Chain Network Resilience and Security Analysis Based on the SPOT Framework).}
+  \cvlistitem{\textbf{Dec. 2025 -- Dec. 2026}. Participant, China Energy Research Society Research Consulting Project, ``光伏行业四层级结构模型构建服务项目'' (Four-tier Structural Model Construction Service Project for the Photovoltaic Industry).}
+\end{cvlist}
 
 %-------------------------------------------------------------------------------
 % SERVICE
 %-------------------------------------------------------------------------------
 \cvsection{Academic Service}
-\begin{cvhonors}
-  \cvhonor{Anonymous Reviewer}{}{Journal of Asian Economics}{}
-\end{cvhonors}
+\begin{cvlist}
+  \cvlistitem{Anonymous Reviewer, \textit{Journal of Asian Economics}.}
+\end{cvlist}
 
 %-------------------------------------------------------------------------------
 % RESOURCES AND SOFTWARE
 %-------------------------------------------------------------------------------
 \cvsection{Books, Data Resources, and Software}
-\begin{cvhonors}
-  \cvhonor{Participant}{}{National Development and Intelligent Governance Laboratory Basic Research and Visualization Platform, Fudan University}{}
-  \cvhonor{Participant}{}{China Foreign Merchandise Trade and Supply Chain Volatility Index, Fudan University Global Supply Chain Research Center}{}
-  \cvhonor{Contributor}{}{Operations Management in the Digital Era (tentative title), edited by Xiaole Wu et al.}{}
-  \cvhonor{Creator and Maintainer}{}{R package SFHNV}{}
-\end{cvhonors}
+\begin{cvlist}
+  \cvlistitem{Participant, National Development and Intelligent Governance Laboratory Basic Research and Visualization Platform, Fudan University.}
+  \cvlistitem{Participant, China Foreign Merchandise Trade and Supply Chain Volatility Index, Fudan University Global Supply Chain Research Center.}
+  \cvlistitem{Contributor, \textit{Operations Management in the Digital Era} (tentative title), edited by Xiaole Wu et al.}
+  \cvlistitem{Creator and maintainer, R package \textbf{SFHNV}.}
+\end{cvlist}
 
 %-------------------------------------------------------------------------------
 % HONORS
 %-------------------------------------------------------------------------------
 \cvsection{Honors \& Awards}
-\begin{cvhonors}
-  \cvhonor{Outstanding Student Model}{Fudan University}{10 students per year}{2025}
-  \cvhonor{Honorable Mention}{15th POMS-HK International Conference Best Student Paper Award}{6 students per year}{2025}
-  \cvhonor{Cargill Global Scholar}{Cargill}{15 students per year}{2019--2021}
-  \cvhonor{Huawei Scholarship / First-Class Outstanding Student Scholarship}{Fudan University}{}{2019--2020}
-  \cvhonor{Zhuobo Scholarship}{Fudan University}{}{2022--2027}
-  \cvhonor{Zheng Zukang Academic Scholarship}{Fudan University}{}{2020--2021}
-  \cvhonor{Outstanding Student}{Fudan University}{}{2018--2019, 2020--2021, 2021--2022}
-\end{cvhonors}
+\begin{cvlist}
+  \cvlistitem{\textbf{2025}. Outstanding Student Model, Fudan University (10 students per year).}
+  \cvlistitem{\textbf{2025}. Honorable Mention, 15th POMS-HK International Conference Best Student Paper Award (6 students per year).}
+  \cvlistitem{\textbf{2019--2021}. Cargill Global Scholar, Cargill (15 students per year).}
+  \cvlistitem{\textbf{2019--2020}. Huawei Scholarship / First-Class Outstanding Student Scholarship, Fudan University.}
+  \cvlistitem{\textbf{2022--2027}. Zhuobo Scholarship, Fudan University.}
+  \cvlistitem{\textbf{2020--2021}. Zheng Zukang Academic Scholarship, Fudan University.}
+  \cvlistitem{\textbf{2018--2019, 2020--2021, 2021--2022}. Outstanding Student, Fudan University.}
+\end{cvlist}
 
 %-------------------------------------------------------------------------------
 % TEACHING
 %-------------------------------------------------------------------------------
 \cvsection{Teaching Experience}
-\begin{cventries}
-  \cventry
-    {Teaching Assistant}
-    {MBA Course: Science and Technology Innovation Young Cadre Program}
-    {Fudan University}
-    {}
-    {}
-
-  \cventry
-    {Teaching Assistant}
-    {Undergraduate Course: Operations Management}
-    {Fudan University}
-    {}
-    {}
-\end{cventries}
+\begin{cvlist}
+  \cvlistitem{Teaching Assistant, MBA Course: Science and Technology Innovation Young Cadre Program, Fudan University.}
+  \cvlistitem{Teaching Assistant, Undergraduate Course: Operations Management, Fudan University.}
+\end{cvlist}
 
 \end{document}
