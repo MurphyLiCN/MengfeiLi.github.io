@@ -28,15 +28,6 @@ package-lock.json
 # 私有研究材料（独立 git repo，见 my private materials/.git/）
 my private materials/
 
-# LaTeX intermediate files (cv/ has its own .gitignore but belt-and-suspenders)
-*.aux
-*.log
-*.out
-*.toc
-*.synctex.gz
-*.fls
-*.fdb_latexmk
-
 # 个人 plan 文件（外部生成，不进 repo）
 .claude/
 

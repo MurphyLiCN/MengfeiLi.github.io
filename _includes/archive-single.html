@@ -31,7 +31,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}"{% if post.link contains "://" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
@@ -59,13 +59,13 @@
       <p>
         {% assign has_download_link = false %}
         {% if paperurl != "" %}
-          <a href="{{ paperurl }}">Download Paper</a>{% assign has_download_link = true %}
+          <a href="{{ paperurl }}" target="_blank" rel="noopener noreferrer">Download Paper</a>{% assign has_download_link = true %}
         {% endif %}
         {% if slidesurl != "" %}
-          {% if has_download_link %} | {% endif %}<a href="{{ slidesurl }}">Download Slides</a>{% assign has_download_link = true %}
+          {% if has_download_link %} | {% endif %}<a href="{{ slidesurl }}" target="_blank" rel="noopener noreferrer">Download Slides</a>{% assign has_download_link = true %}
         {% endif %}
         {% if bibtexurl != "" %}
-          {% if has_download_link %} | {% endif %}<a href="{{ bibtexurl }}">Download Bibtex</a>
+          {% if has_download_link %} | {% endif %}<a href="{{ bibtexurl }}" target="_blank" rel="noopener noreferrer">Download Bibtex</a>
         {% endif %}
       </p>
     {% endif %}

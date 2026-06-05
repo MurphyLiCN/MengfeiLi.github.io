@@ -33,7 +33,7 @@ Do not publish the phone number from the resume unless the user explicitly asks 
 - Hosting target: GitHub Pages
 - Current repository: `MurphyLiCN/MengfeiLi.github.io`
 - Current Pages shape: project site with `baseurl: /MengfeiLi.github.io`
-- CV: Awesome-CV, compiled with XeLaTeX
+- CV: web CV only
 
 ## Key Files
 
@@ -49,8 +49,6 @@ Do not publish the phone number from the resume unless the user explicitly asks 
 | `_teaching/*.md` | Teaching assistant entries |
 | `_includes/person-schema.html` | Person JSON-LD and name-variant SEO metadata |
 | `images/profile.jpg` | Public profile image |
-| `cv/cv.tex` | LaTeX CV source |
-| `cv/Makefile` | CV build and publish workflow |
 
 ## Commands
 
@@ -65,12 +63,6 @@ npm install
 npm run build:js
 ```
 
-```bash
-cd cv
-make
-make clean
-```
-
 ## Content Conventions
 
 - Keep the public site concise and academic.
@@ -79,7 +71,7 @@ make clean
 - Keep phone numbers, private CV drafts, and private research materials out of tracked files.
 - Avoid editing `_layouts/` and `_sass/` unless the user asks for structural or visual changes.
 - If JavaScript source changes, regenerate `assets/js/main.min.js` with `npm run build:js`.
-- If `cv/cv.tex` changes, run `make` in `cv/` so `files/cv.pdf` is updated.
+- Public CV changes should be made in `_pages/cv.md`.
 
 ## Open Items
 

@@ -16,18 +16,21 @@ redirect_from:
     <h1>Mengfei Li <span>李梦飞</span></h1>
     <p class="home-profile__affiliation">School of Management, Fudan University</p>
     <p class="home-profile__summary">
-      I am a PhD candidate in Management Science at the <a href="https://www.fdsm.fudan.edu.cn/en/">School of Management, Fudan University</a>, advised by <a href="https://www.fdsm.fudan.edu.cn/En/2025/1106/c1052a24525/page.htm"><strong>Prof. Xiaole Wu</strong></a>. I was a visiting PhD student at the Operations &amp; Decision Technologies group at the <a href="https://kelley.iu.edu/index.html">Kelley School of Business, Indiana University</a>, hosted by <a href="https://kelley.iu.edu/faculty-research/faculty-directory/profile.html?id=WENCZHAN">Prof. Wenchang Zhang</a>. My research lies in <strong>AI-based empirical operations management</strong>. I am the principal investigator of the National Natural Science Foundation of China Young Student Basic Research Project (Doctoral Students), “Integrating Causal Machine Learning and Structural Model Estimation: Theory and Optimization Applications,” from January 2025 to December 2027.
+      I am a PhD candidate in Management Science at the <a href="https://www.fdsm.fudan.edu.cn/en/" target="_blank" rel="noopener noreferrer">School of Management, Fudan University</a>, advised by <a href="https://www.fdsm.fudan.edu.cn/En/2025/1106/c1052a24525/page.htm" target="_blank" rel="noopener noreferrer"><strong>Prof. Xiaole Wu</strong></a>. I was a visiting PhD student at the Operations &amp; Decision Technologies group at the <a href="https://kelley.iu.edu/index.html" target="_blank" rel="noopener noreferrer">Kelley School of Business, Indiana University</a> (Sep - Dec 2024), hosted by <a href="https://kelley.iu.edu/faculty-research/faculty-directory/profile.html?id=WENCZHAN" target="_blank" rel="noopener noreferrer">Prof. Wenchang Zhang</a>. My research lies in <strong>AI-based empirical operations management</strong>.
+    </p>
+    <p class="home-profile__summary">
+      I am the <strong>principal investigator</strong> of the National Natural Science Foundation of China Young Student Basic Research Project (Doctoral Students), “Integrating Causal Machine Learning and Structural Model Estimation: Theory and Optimization Applications,” from January 2025 to December 2027. In 2026, I was honored with the title of Fudan University Outstanding Student Pace-setter (awarded to only 10 Ph.D. students annually).
     </p>
     <p class="home-profile__summary">
       I will be on the <strong>2026–2027</strong> academic job market for tenure-track positions in Operations Management.
     </p>
     <nav class="home-profile__links" aria-label="Profile links">
       <a href="mailto:mfli22@m.fudan.edu.cn">Email</a>
-      <a href="{{ base_path }}/files/cv.pdf">CV</a>
+      <a href="{{ base_path }}/cv/">CV</a>
       <a href="{{ base_path }}/publications/">Research</a>
       <a href="{{ base_path }}/projects/">Projects</a>
       <a href="{{ base_path }}/talks/">Talks</a>
-      <a href="https://github.com/MurphyLiCN">GitHub</a>
+      <a href="https://github.com/MurphyLiCN" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
   </div>
   <figure class="home-profile__portrait">
@@ -39,15 +42,15 @@ redirect_from:
   <h2 id="research-heading">Research</h2>
   <ol class="home-publication-list">
     <li>
-      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783">Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions</a>
-      <span>with Ji Huang and Shuai Shao; listed in alphabetical order. ACL 2026 Findings.</span>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783" target="_blank" rel="noopener noreferrer">Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions</a>
+      <span>with Ji Huang and Shuai Shao; listed in alphabetical order. ACL 2026 Findings (CCF-A).</span>
     </li>
     <li>
-      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302">Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency</a>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302" target="_blank" rel="noopener noreferrer">Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency</a>
       <span>with Wenchang Zhang, Cheng Yue, Ming Liu, and Xiaole Wu. Revise and resubmit at <em>Management Science</em>.</span>
     </li>
     <li>
-      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942">供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL）</a>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942" target="_blank" rel="noopener noreferrer">供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL）</a>
       <span>Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss. With Xiaole Wu, Yang Chen, and Jinyan Zhu. Third-round review at <em>Journal of Management Sciences in China</em>.</span>
     </li>
     <li>
@@ -74,7 +77,7 @@ redirect_from:
     <ul class="home-compact-list">
       <li><strong>Email:</strong> <a href="mailto:mfli22@m.fudan.edu.cn">mfli22@m.fudan.edu.cn</a></li>
       <li><strong>Affiliation:</strong> School of Management, Fudan University, Shanghai</li>
-      <li><strong>CV:</strong> <a href="{{ base_path }}/cv/">web version</a> · <a href="{{ base_path }}/files/cv.pdf">PDF</a></li>
+      <li><strong>CV:</strong> <a href="{{ base_path }}/cv/">web version</a></li>
     </ul>
   </div>
 </section>

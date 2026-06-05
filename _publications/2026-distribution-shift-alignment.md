@@ -5,7 +5,7 @@ category: published-papers
 permalink: /publication/2026-distribution-shift-alignment
 excerpt: "Introduces Distribution Shift Alignment, a two-stage fine-tuning method that learns distribution shifts across respondent backgrounds to improve LLM-based survey simulation."
 date: 2026-01-01
-venue: "ACL 2026 Findings"
+venue: "ACL 2026 Findings (CCF-A)"
 paperurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783"
 ---
 

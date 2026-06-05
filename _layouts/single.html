@@ -54,18 +54,18 @@ layout: default
           <p style="font-size: smaller">
             {% assign has_download_link = false %}
             {% if paperurl != "" %}
-              <a href="{{ paperurl }}">Download Paper</a>{% assign has_download_link = true %}
+              <a href="{{ paperurl }}" target="_blank" rel="noopener noreferrer">Download Paper</a>{% assign has_download_link = true %}
             {% endif %}
             {% if slidesurl != "" %}
-              {% if has_download_link %} | {% endif %}<a href="{{ slidesurl }}">Download Slides</a>{% assign has_download_link = true %}
+              {% if has_download_link %} | {% endif %}<a href="{{ slidesurl }}" target="_blank" rel="noopener noreferrer">Download Slides</a>{% assign has_download_link = true %}
             {% endif %}
             {% if bibtexurl != "" %}
-              {% if has_download_link %} | {% endif %}<a href="{{ bibtexurl }}">Download Bibtex</a>
+              {% if has_download_link %} | {% endif %}<a href="{{ bibtexurl }}" target="_blank" rel="noopener noreferrer">Download Bibtex</a>
             {% endif %}
           </p>
         {% endif %}
 
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn"{% if page.link contains "://" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
       <footer class="page__meta">

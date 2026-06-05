@@ -2,7 +2,7 @@
 
 Source code for Mengfei Li's academic personal website.
 
-This site is based on the [academicpages](https://github.com/academicpages/academicpages.github.io) Jekyll template and is intended for GitHub Pages. The public CV source is maintained in [`cv/`](cv/).
+This site is based on the [academicpages](https://github.com/academicpages/academicpages.github.io) Jekyll template and is intended for GitHub Pages.
 
 ## Quick Start
 
@@ -30,12 +30,7 @@ npm run build:js
 
 ## CV
 
-```bash
-cd cv
-make
-```
-
-The default `make` target compiles `cv/cv.tex` and copies the result to `files/cv.pdf`, which is the public download target.
+The public CV is maintained as the web page at `_pages/cv.md`.
 
 ## Content Files
 
@@ -43,7 +38,6 @@ The default `make` target compiles `cv/cv.tex` and copies the result to `files/c
 - `_publications/*.md`: research entries
 - `_talks/*.md`: talks and conference presentations
 - `_pages/cv.md`: web CV
-- `cv/cv.tex`: LaTeX CV
 - `images/profile.jpg`: profile photo
 
 ## Privacy
