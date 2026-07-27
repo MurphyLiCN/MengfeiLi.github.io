@@ -39,4 +39,4 @@ author_profile: true
 * 邮箱：[mfli22@m.fudan.edu.cn](mailto:mfli22@m.fudan.edu.cn)
 * 单位：复旦大学管理学院，上海
 * 学术档案：[Google Scholar](https://scholar.google.com/citations?user=YnamrlUAAAAJ){:target="_blank" rel="noopener noreferrer"} · [ResearchGate](https://www.researchgate.net/profile/Mengfei-Li-10){:target="_blank" rel="noopener noreferrer"}
-* 页面：[English homepage]({{ base_path }}/) · [Research]({{ base_path }}/publications/) · [CV]({{ base_path }}/cv/)
+* 页面：[English homepage]({{ base_path }}/) · [Research]({{ base_path }}/publications/) · [CV 网页版]({{ base_path }}/cv/) · <a href="{{ base_path }}/files/Mengfei-Li-CV.pdf" download="Mengfei-Li-CV.pdf">下载 PDF 简历</a>

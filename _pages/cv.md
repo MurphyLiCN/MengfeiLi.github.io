@@ -10,6 +10,13 @@ redirect_from:
 
 {% include base_path %}
 
+<p>
+  <a href="{{ base_path }}/files/Mengfei-Li-CV.pdf" class="btn" download="Mengfei-Li-CV.pdf">
+    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+    Download PDF CV (Chinese)
+  </a>
+</p>
+
 Education
 ======
 * **Ph.D. Candidate in Management Science**, *Sep 2022 - present*

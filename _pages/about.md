@@ -85,7 +85,7 @@ redirect_from:
     <ul class="home-compact-list">
       <li><strong>Email:</strong> <a href="mailto:mfli22@m.fudan.edu.cn">mfli22@m.fudan.edu.cn</a></li>
       <li><strong>Affiliation:</strong> School of Management, Fudan University, Shanghai</li>
-      <li><strong>CV:</strong> <a href="{{ base_path }}/cv/">web version</a></li>
+      <li><strong>CV:</strong> <a href="{{ base_path }}/cv/">web version</a> · <a href="{{ base_path }}/files/Mengfei-Li-CV.pdf" download="Mengfei-Li-CV.pdf">PDF download (Chinese)</a></li>
     </ul>
   </div>
 </section>
