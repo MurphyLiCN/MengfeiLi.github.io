@@ -68,21 +68,21 @@
   "publications": [
     {
       "name": "Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions",
-      "publisher": "ACL 2026 Findings",
+      "publisher": "Findings of the Association for Computational Linguistics: ACL 2026",
       "releaseDate": "2026",
-      "website": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783",
-      "summary": "Accepted paper with Ji Huang and Shuai Shao."
+      "website": "https://aclanthology.org/2026.findings-acl.457/",
+      "summary": "Published paper with Ji Huang and Shuai Shao, pages 9395-9409, DOI 10.18653/v1/2026.findings-acl.457."
     },
     {
-      "name": "Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency",
-      "publisher": "Revise and resubmit at Management Science",
+      "name": "Learning by Doing in SME Manufacturing",
+      "publisher": "Under second-round review at Management Science",
       "releaseDate": "2025",
       "website": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302",
       "summary": "Manuscript with Wenchang Zhang, Cheng Yue, Ming Liu, and Xiaole Wu."
     },
     {
       "name": "供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL） (Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss)",
-      "publisher": "Third-round review at 管理科学学报 (Journal of Management Sciences in China)",
+      "publisher": "Accepted and forthcoming in 管理科学学报 (Journal of Management Sciences in China)",
       "releaseDate": "2025",
       "website": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942",
       "summary": "Manuscript with Xiaole Wu, Yang Chen, and Jinyan Zhu."

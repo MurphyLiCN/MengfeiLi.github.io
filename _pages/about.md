@@ -51,15 +51,15 @@ redirect_from:
   <ol class="home-publication-list">
     <li>
       <a href="{{ base_path }}/publication/2026-distribution-shift-alignment">Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions</a>
-      <span>with Ji Huang and Shuai Shao; listed in alphabetical order. ACL 2026 Findings (CCF-A). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783" target="_blank" rel="noopener noreferrer">SSRN</a>.</span>
+      <span>with Ji Huang and Shuai Shao; listed in alphabetical order. Published in <em>Findings of the Association for Computational Linguistics: ACL 2026</em> (CCF-A), pp. 9395-9409. <a href="https://aclanthology.org/2026.findings-acl.457/" target="_blank" rel="noopener noreferrer">ACL Anthology</a> · <a href="https://doi.org/10.18653/v1/2026.findings-acl.457" target="_blank" rel="noopener noreferrer">DOI</a>.</span>
     </li>
     <li>
-      <a href="{{ base_path }}/publication/2025-experience-based-learning-smes">Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency</a>
-      <span>with Wenchang Zhang, Cheng Yue, Ming Liu, and Xiaole Wu. Revise and resubmit at <em>Management Science</em>. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302" target="_blank" rel="noopener noreferrer">SSRN</a>.</span>
+      <a href="{{ base_path }}/publication/2025-experience-based-learning-smes">Learning by Doing in SME Manufacturing</a>
+      <span>with Wenchang Zhang, Cheng Yue, Ming Liu, and Xiaole Wu. Under second-round review at <em>Management Science</em>. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302" target="_blank" rel="noopener noreferrer">SSRN</a>.</span>
     </li>
     <li>
       <a href="{{ base_path }}/publication/2025-supply-chain-resilience-metrics">供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL）</a>
-      <span>Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss. With Xiaole Wu, Yang Chen, and Jinyan Zhu. Third-round review at <em>管理科学学报 (Journal of Management Sciences in China)</em>. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942" target="_blank" rel="noopener noreferrer">SSRN</a>.</span>
+      <span>Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss. With Xiaole Wu, Yang Chen, and Jinyan Zhu. Accepted and forthcoming in <em>管理科学学报 (Journal of Management Sciences in China)</em>. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942" target="_blank" rel="noopener noreferrer">SSRN</a>.</span>
     </li>
     <li>
       <a href="{{ base_path }}/publication/2025-structural-forest-newsvendor">A Structural Forest Estimation of Heterogeneous Newsvendor Models</a>

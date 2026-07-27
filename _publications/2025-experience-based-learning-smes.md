@@ -1,5 +1,5 @@
 ---
-title: "Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency"
+title: "Learning by Doing in SME Manufacturing"
 authors:
   - "Mengfei Li"
   - "Wenchang Zhang"
@@ -12,8 +12,8 @@ permalink: /publication/2025-experience-based-learning-smes
 excerpt: "Uses order-level ERP data to show how product-specific experience improves both manufacturing efficiency and consistency in SMEs."
 date: 2026-01-01
 year: 2026
-status: "Revise and Resubmit"
-venue: "Revise and Resubmit at Management Science"
+status: "Under Second-Round Review"
+venue: "Under second-round review at Management Science"
 paperurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302"
 ---
 

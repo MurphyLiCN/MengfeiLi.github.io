@@ -37,12 +37,12 @@ Publications and Manuscripts
 ======
 **Published**
 
-* Ji Huang, **Mengfei Li**, Shuai Shao (listed in alphabetical order). "[Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions]({{ base_path }}/publication/2026-distribution-shift-alignment)." **ACL 2026 Findings** (CCF-A). [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676783){:target="_blank" rel="noopener noreferrer"}.
+* Ji Huang, **Mengfei Li**, Shuai Shao (listed in alphabetical order). "[Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions]({{ base_path }}/publication/2026-distribution-shift-alignment)." *Findings of the Association for Computational Linguistics: ACL 2026* (CCF-A), pp. 9395-9409. [ACL Anthology](https://aclanthology.org/2026.findings-acl.457/){:target="_blank" rel="noopener noreferrer"} · [DOI](https://doi.org/10.18653/v1/2026.findings-acl.457){:target="_blank" rel="noopener noreferrer"}.
+* **Mengfei Li**, Xiaole Wu, Yang Chen, Jinyan Zhu. "[供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL） (Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss)]({{ base_path }}/publication/2025-supply-chain-resilience-metrics)." Accepted and forthcoming in *管理科学学报 (Journal of Management Sciences in China)*. [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942){:target="_blank" rel="noopener noreferrer"}.
 
 **Under Review**
 
-* **Mengfei Li**, Wenchang Zhang, Cheng Yue, Ming Liu, Xiaole Wu. "[Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency]({{ base_path }}/publication/2025-experience-based-learning-smes)." Revise and resubmit at *Management Science*. [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302){:target="_blank" rel="noopener noreferrer"}.
-* **Mengfei Li**, Xiaole Wu, Yang Chen, Jinyan Zhu. "[供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL） (Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss)]({{ base_path }}/publication/2025-supply-chain-resilience-metrics)." Third-round review at *管理科学学报 (Journal of Management Sciences in China)*. [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942){:target="_blank" rel="noopener noreferrer"}.
+* **Mengfei Li**, Wenchang Zhang, Cheng Yue, Ming Liu, Xiaole Wu. "[Learning by Doing in SME Manufacturing]({{ base_path }}/publication/2025-experience-based-learning-smes)." Under second-round review at *Management Science*. [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302){:target="_blank" rel="noopener noreferrer"}.
 
 **Working Papers**
 
