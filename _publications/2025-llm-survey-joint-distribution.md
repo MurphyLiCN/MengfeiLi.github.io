@@ -1,10 +1,16 @@
 ---
 title: "LLMs Simulate Survey Response for Joint Distribution of Multiple Questions"
+authors:
+  - "Ji Huang"
+  - "Mengfei Li"
+  - "Shuai Shao"
 collection: publications
 category: working-papers
 permalink: /publication/2025-llm-survey-joint-distribution
 excerpt: "Extends LLM-based survey simulation from marginal response distributions to joint distributions across multiple questions, with attention to reliability and validity."
 date: 2026-01-01
+year: 2026
+status: "Working Paper"
 venue: "Working Paper"
 paperurl: ""
 ---

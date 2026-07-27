@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Sitemap"
+description: "A concise index of Mengfei Li's academic profile, research, projects, talks, and curriculum vitae."
 permalink: /sitemap/
 author_profile: true
 ---
@@ -11,7 +12,10 @@ A list of all the posts and pages found on the site. For you robots out there, t
 
 <h2>Pages</h2>
 {% for post in site.pages %}
-  {% include archive-single.html %}
+  {% assign sitemap_title = post.title | default: "" | strip %}
+  {% unless post.sitemap == false or sitemap_title == "" or post.url == "/404.html" %}
+    {% include archive-single.html %}
+  {% endunless %}
 {% endfor %}
 
 <h2>Posts</h2>
@@ -30,7 +34,7 @@ A list of all the posts and pages found on the site. For you robots out there, t
   {% endif %}
 {% endunless %}
 {% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
+  {% unless collection.output == false or collection.label == "posts" or post.sitemap == false %}
   {% include archive-single.html %}
   {% endunless %}
 {% endfor %}

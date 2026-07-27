@@ -1,10 +1,16 @@
 ---
 title: "Little-Treat Consumption: A Qualitative Analysis Using Generative Large Language Models (GLLMs)"
+authors:
+  - "Zhe Zhang"
+  - "Handan Shi"
+  - "Mengfei Li"
 collection: publications
 category: working-papers
 permalink: /publication/2025-little-treat-consumption
 excerpt: "Develops and validates the construct of little-treat consumption through an AI-human hybrid workflow combining qualitative discovery, surveys, and GLLM robustness tests."
 date: 2026-01-01
+year: 2026
+status: "Working Paper"
 venue: "Working Paper"
 paperurl: ""
 ---

@@ -1,10 +1,18 @@
 ---
 title: "Competition, Overcapacity, and Consolidation in a Multi-Tier Solar Manufacturing Chain"
+authors:
+  - "Ziyin Bin"
+  - "Mengfei Li"
+  - "Zibo Liu"
+  - "Lezhen Wu"
+  - "Xiaole Wu"
 collection: publications
 category: working-papers
 permalink: /publication/2025-photovoltaic-capacity-decision
 excerpt: "Estimates Cournot oligopoly models across four tiers of the solar manufacturing chain to study overcapacity, cost rigidity, and consolidation."
 date: 2026-01-01
+year: 2026
+status: "Working Paper"
 venue: "Working Paper"
 paperurl: ""
 ---

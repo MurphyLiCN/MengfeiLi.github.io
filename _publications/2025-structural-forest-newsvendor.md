@@ -1,10 +1,16 @@
 ---
 title: "A Structural Forest Estimation of Heterogeneous Newsvendor Models"
+authors:
+  - "Mengfei Li"
+  - "Guihua Wang"
+  - "Wenchang Zhang"
 collection: publications
 category: working-papers
 permalink: /publication/2025-structural-forest-newsvendor
 excerpt: "Develops a structural forest estimator that embeds the newsvendor optimality condition into tree-based splitting to estimate heterogeneous cost ratios."
 date: 2026-01-01
+year: 2026
+status: "Working Paper"
 venue: "Working Paper"
 paperurl: ""
 ---

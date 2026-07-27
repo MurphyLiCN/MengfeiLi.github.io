@@ -15,9 +15,9 @@ The site has been populated from `李梦飞.docx` and the provided profile photo
 
 ## Academic Profiles
 
-- Google Scholar URL.
+- Google Scholar URL: confirmed as `https://scholar.google.com/citations?user=YnamrlUAAAAJ`.
 - ORCID iD.
-- ResearchGate URL.
+- ResearchGate URL: confirmed as `https://www.researchgate.net/profile/Mengfei-Li-10`.
 - SSRN or paper repository URL, if any.
 
 ## Papers
