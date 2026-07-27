@@ -1,19 +1,25 @@
 {%- if page.collection == "publications" -%}
   {%- assign publication_url = page.url | prepend: site.baseurl | prepend: site.url -%}
-  {%- assign publication_year = page.year -%}
-  {%- unless publication_year -%}
-    {%- assign publication_year = page.date | date: "%Y" -%}
-  {%- endunless -%}
-  {%- assign publication_paper_url = page.paperurl | default: "" | strip -%}
+  {%- assign publication_title = page.title_en | default: page.title -%}
+  {%- assign publication_venue = page.venue_en | default: page.venue -%}
+  {%- assign publication_paper_url = page.paper_url | default: page.ssrn_url | default: "" | strip -%}
 
-<meta name="citation_title" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">
+<meta name="citation_title" content="{{ publication_title | markdownify | strip_html | strip_newlines | escape_once }}">
 {%- for author in page.authors %}
 <meta name="citation_author" content="{{ author | escape_once }}">
 {%- endfor %}
-<meta name="citation_publication_date" content="{{ publication_year }}">
 <meta name="citation_abstract_html_url" content="{{ publication_url }}">
-{%- if page.status == "Published" and page.venue %}
-<meta name="citation_conference_title" content="{{ page.venue | escape_once }}">
+{%- if page.status == "published" and page.publication_date %}
+<meta name="citation_publication_date" content="{{ page.publication_date }}">
+{%- endif %}
+{%- if page.status == "published" and publication_venue %}
+<meta name="citation_conference_title" content="{{ publication_venue | escape_once }}">
+{%- endif %}
+{%- if page.doi %}
+<meta name="citation_doi" content="{{ page.doi | escape_once }}">
+{%- endif %}
+{%- if page.pdf_url %}
+<meta name="citation_pdf_url" content="{{ page.pdf_url | escape_once }}">
 {%- endif %}
 
 <script type="application/ld+json">
@@ -26,9 +32,10 @@
     "@type": "WebPage",
     "@id": {{ publication_url | jsonify }}
   },
-  "headline": {{ page.title | markdownify | strip_html | strip_newlines | jsonify }},
+  "headline": {{ publication_title | markdownify | strip_html | strip_newlines | jsonify }},
   "description": {{ page.excerpt | default: site.description | markdownify | strip_html | strip_newlines | jsonify }},
-  "datePublished": {{ publication_year | jsonify }},
+  "creativeWorkStatus": {{ page.status_label | default: page.status | jsonify }},
+  "inLanguage": {{ page.language | default: "en" | jsonify }},
   "author": [
     {%- for author in page.authors %}
     {
@@ -37,12 +44,30 @@
       "@id": {{ site.url | append: site.baseurl | append: "/#person" | jsonify }}{% endif %}
     }{% unless forloop.last %},{% endunless %}
     {%- endfor %}
-  ],
+  ]{% if page.status == "published" and page.publication_date %},
+  "datePublished": {{ page.publication_date | jsonify }}{% endif %}{% if page.updated %},
+  "dateModified": {{ page.updated | jsonify }}{% endif %}{% if publication_venue %},
   "isPartOf": {
     "@type": "CreativeWork",
-    "name": {{ page.venue | default: page.status | jsonify }}
-  }{% if publication_paper_url != "" %},
-  "sameAs": {{ publication_paper_url | jsonify }}{% endif %}
+    "name": {{ publication_venue | jsonify }}
+  }{% endif %}{% if page.publisher %},
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ page.publisher | jsonify }}
+  }{% endif %}{% if page.pages %},
+  "pagination": {{ page.pages | jsonify }}{% endif %}{% if page.keywords %},
+  "keywords": {{ page.keywords | jsonify }}{% endif %}{% if page.doi %},
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": {{ page.doi | jsonify }}
+  }{% endif %}{% if publication_paper_url != "" %},
+  "sameAs": {{ publication_paper_url | jsonify }}{% endif %}{% if page.pdf_url %},
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": {{ page.pdf_url | jsonify }},
+    "encodingFormat": "application/pdf"
+  }{% endif %}
 }
 </script>
 {%- endif -%}

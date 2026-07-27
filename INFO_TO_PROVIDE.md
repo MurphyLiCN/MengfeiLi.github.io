@@ -1,39 +1,21 @@
-# Information Still Needed
+# Optional Information for Future Updates
 
-The site has been populated from `李梦飞.docx` and the provided profile photo. The following items still need user confirmation before the public homepage is final.
+The public site and current CVs are complete without the items below. Add them only after Mengfei Li confirms the relevant facts or public links.
 
-## Website
+## Research and Profiles
 
-- Current public URL is confirmed as `https://murphylicn.github.io/MengfeiLi.github.io/`.
-- Keep the current GitHub Pages project-site configuration unless switching to a custom domain later.
-
-## Personal Profile
-
-- Whether to publish a phone number. Current default: **do not publish**.
-- Office address, if it should appear on the website.
-- Final 100-150 word English bio.
-
-## Academic Profiles
-
-- Google Scholar URL: confirmed as `https://scholar.google.com/citations?user=YnamrlUAAAAJ`.
-- ORCID iD.
-- ResearchGate URL: confirmed as `https://www.researchgate.net/profile/Mengfei-Li-10`.
-- SSRN or paper repository URL, if any.
-
-## Papers
-
-- Public paper URLs or PDFs for each listed paper.
-- Abstracts for publication detail pages.
-- Final author order and status wording for all under-review and working papers.
+- A designated Job Market Paper title and any public job-market materials
+- ORCID iD
+- Additional public manuscript or data links
+- Final publication metadata when working papers change status
 
 ## Teaching
 
-- Exact semesters/years for:
-  - MBA course: Science and Technology Innovation Young Cadre Program (科创青干营)
-  - Undergraduate course: Operations Management
+- Exact semesters or years for the confirmed Teaching Assistant roles
+- Course instructors or duties, if they should be public
 
-## Deployment
+## Hosting
 
-- If a custom domain is purchased, add a `CNAME` file with the domain and update `_config.yml`.
-- For the current GitHub project site, keep `baseurl: "/MengfeiLi.github.io"`.
-- If deployed as a user site or custom-domain root, set `baseurl: ""`.
+- A custom domain, if one is purchased later
+
+Do not infer missing facts or publish phone numbers, birth dates, home addresses, private drafts, or confidential research materials.

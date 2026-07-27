@@ -3,11 +3,9 @@
 {% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
 <div class="page__footer-follow">
   <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
+    <li><strong>{% if page.lang contains "zh" %}联系与学术档案：{% else %}Contact &amp; Profiles:{% endif %}</strong></li>
     {% if site.author.github %}
-      <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
     {% endif %}
     {% if site.author.bitbucket %}
       <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
@@ -20,6 +18,9 @@
 {% endif %}
 
 <div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow noopener noreferrer" target="_blank">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io" target="_blank" rel="noopener noreferrer">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow noopener noreferrer" target="_blank">Minimal Mistakes</a>.<br />
-  Site last updated {{ "now" | date: '%Y-%m-%d' }}
+  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.
+  {% if page.lang contains "zh" %}使用{% else %}Built with{% endif %}
+  <a href="https://jekyllrb.com" rel="nofollow noopener noreferrer" target="_blank">Jekyll</a>
+  {% if page.lang contains "zh" %}与{% else %}and{% endif %}
+  <a href="https://github.com/academicpages/academicpages.github.io" target="_blank" rel="noopener noreferrer">AcademicPages</a>.
 </div>

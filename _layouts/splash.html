@@ -8,7 +8,7 @@ layout: default
   {% include page__hero.html %}
 {% endif %}
 
-<div id="main" role="main">
+<main id="main">
   <article class="splash"{% unless page.url == '/' %} itemscope itemtype="https://schema.org/WebPage"{% endunless %}>
     {% unless page.url == '/' %}
       {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -21,4 +21,4 @@ layout: default
       {{ content }}
     </section>
   </article>
-</div>
+</main>

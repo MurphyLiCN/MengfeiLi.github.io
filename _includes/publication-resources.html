@@ -1,0 +1,14 @@
+{% assign resource_publication = include.publication | default: page %}
+{% if resource_publication.paper_url or resource_publication.ssrn_url or resource_publication.doi or resource_publication.pdf_url or resource_publication.code_url or resource_publication.software_url or resource_publication.bibtex_url %}
+  <nav class="publication-resources" aria-label="Publication resources">
+    {% if resource_publication.paper_url %}<a href="{{ resource_publication.paper_url }}" target="_blank" rel="noopener noreferrer">{{ resource_publication.paper_label | default: "Paper" }}</a>{% endif %}
+    {% if resource_publication.ssrn_url %}<a href="{{ resource_publication.ssrn_url }}" target="_blank" rel="noopener noreferrer">SSRN</a>{% endif %}
+    {% if resource_publication.doi %}<a href="https://doi.org/{{ resource_publication.doi }}" target="_blank" rel="noopener noreferrer">DOI</a>{% endif %}
+    {% if resource_publication.pdf_url %}<a href="{{ resource_publication.pdf_url }}" target="_blank" rel="noopener noreferrer">PDF</a>{% endif %}
+    {% if resource_publication.code_url %}<a href="{{ resource_publication.code_url }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
+    {% if resource_publication.software_url %}<a href="{{ resource_publication.software_url }}" target="_blank" rel="noopener noreferrer">Software</a>{% endif %}
+    {% if resource_publication.bibtex_url %}<a href="{{ resource_publication.bibtex_url }}" target="_blank" rel="noopener noreferrer">BibTeX</a>{% endif %}
+  </nav>
+{% elsif resource_publication.status != "published" and resource_publication.status != "forthcoming" %}
+  <p class="publication-resources"><a href="mailto:{{ site.author.email }}">Manuscript available upon request</a></p>
+{% endif %}

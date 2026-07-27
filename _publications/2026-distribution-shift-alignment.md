@@ -1,21 +1,38 @@
 ---
 title: "Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions"
+title_zh: "分布偏移对齐帮助大语言模型模拟调查响应分布"
 authors:
   - "Ji Huang"
   - "Mengfei Li"
   - "Shuai Shao"
+author_note: "Authors listed alphabetically."
 collection: publications
 category: published-papers
 permalink: /publication/2026-distribution-shift-alignment
 excerpt: "Introduces Distribution Shift Alignment, a two-stage fine-tuning method that learns distribution shifts across respondent backgrounds to improve LLM-based survey simulation."
-date: 2026-07-01
+excerpt_zh: "提出分布偏移对齐方法，通过学习不同受访者背景下的分布变化，提高大语言模型调查响应模拟的准确性与数据效率。"
+publication_date: "2026-07"
 year: 2026
-status: "Published"
-venue: "Findings of the Association for Computational Linguistics: ACL 2026 (CCF-A)"
+display_date: "July 2026"
+sort_order: 1
+updated: 2026-07-27
+status: published
+status_label: "Published"
+venue: "Findings of the Association for Computational Linguistics: ACL 2026"
 publisher: "Association for Computational Linguistics"
 pages: "9395-9409"
 doi: "10.18653/v1/2026.findings-acl.457"
-paperurl: "https://aclanthology.org/2026.findings-acl.457/"
+paper_url: "https://aclanthology.org/2026.findings-acl.457/"
+paper_label: "ACL Anthology"
+pdf_url: "https://aclanthology.org/2026.findings-acl.457.pdf"
+language: en
+keywords:
+  - large language models
+  - survey simulation
+  - distribution shift
+  - synthetic data
+featured: true
+featured_order: 1
 ---
 
 ## Abstract

@@ -178,9 +178,11 @@
   background: var(--global-bg-color);
 
   a {
-    display: block;
+    display: flex;
+    min-height: 2.75rem;
     margin: 0 1rem;
     padding: 0.5rem 0;
+    align-items: center;
     color: var(--global-masthead-link-color);
     text-decoration: none;
 
@@ -189,13 +191,13 @@
     }
   }
 
-  button {
+  > .greedy-nav__toggle {
     position: absolute;
-    height: 2.5rem;
+    min-width: 2.75rem;
+    height: 2.75rem;
     right: 0;
     padding: 0 0.5rem;
     border: 0;
-    outline: none;
     background-color: var(--global-bg-color);
     color: var(--global-text-color);
     cursor: pointer;
@@ -226,11 +228,24 @@
     }
 
     #theme-toggle {
-      a {
-        width: 25px;
+      button {
         display: flex;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-left: 0.25rem;
+        padding: 0;
+        align-items: center;
         justify-content: center;
+        color: var(--global-masthead-link-color);
+        background: transparent;
+        border: 0;
+        border-radius: $border-radius;
         cursor: pointer;
+
+        &:hover {
+          color: var(--global-masthead-link-color-hover);
+          background: var(--global-thead-color);
+        }
       }
     }
 

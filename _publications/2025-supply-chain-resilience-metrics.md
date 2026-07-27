@@ -1,19 +1,33 @@
 ---
 title: "供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL） (Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss)"
+title_en: "Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss"
+title_zh: "供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL）"
 authors:
   - "Mengfei Li"
   - "Xiaole Wu"
   - "Yang Chen"
   - "Jinyan Zhu"
 collection: publications
-category: published-papers
+category: forthcoming
 permalink: /publication/2025-supply-chain-resilience-metrics
 excerpt: "Proposes Structural Change-Points and Weighted Cumulative Loss as non-parametric metrics for measuring supply chain resilience across the absorb-adapt-recover cycle."
-date: 2026-01-01
-year: 2026
-status: "Accepted (Forthcoming)"
-venue: "Accepted and forthcoming in 管理科学学报 (Journal of Management Sciences in China)"
-paperurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942"
+excerpt_zh: "提出结构变点与加权累计损失两项非参数指标，刻画供应链在吸收、适应与恢复全过程中的韧性表现。"
+status: forthcoming
+status_label: "Accepted and forthcoming"
+venue: "管理科学学报 (Journal of Management Sciences in China)"
+venue_en: "Journal of Management Sciences in China"
+sort_order: 2
+updated: 2026-07-27
+ssrn_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942"
+doi: "10.2139/ssrn.5218942"
+language: zh-CN
+keywords:
+  - supply chain resilience
+  - structural change-points
+  - weighted cumulative loss
+featured: true
+featured_order: 3
+project_id: supply-chain-resilience
 ---
 
 ## Chinese Abstract

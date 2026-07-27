@@ -1,0 +1,28 @@
+{% assign publication_items = site.publications | sort: "sort_order" %}
+{% if include.category %}
+  {% assign publication_items = publication_items | where: "category", include.category %}
+{% endif %}
+{% if include.featured %}
+  {% assign publication_items = publication_items | where: "featured", true %}
+  {% assign publication_items = publication_items | sort: "featured_order" %}
+{% endif %}
+
+{% if include.ordered %}
+<ol class="publication-list{% if include.compact %} publication-list--compact{% endif %}">
+{% else %}
+<ul class="publication-list{% if include.compact %} publication-list--compact{% endif %}">
+{% endif %}
+  {% if include.limit %}
+    {% for publication in publication_items limit: include.limit %}
+      {% include publication-entry.html publication=publication lang=include.lang show_summary=include.show_summary %}
+    {% endfor %}
+  {% else %}
+    {% for publication in publication_items %}
+      {% include publication-entry.html publication=publication lang=include.lang show_summary=include.show_summary %}
+    {% endfor %}
+  {% endif %}
+{% if include.ordered %}
+</ol>
+{% else %}
+</ul>
+{% endif %}

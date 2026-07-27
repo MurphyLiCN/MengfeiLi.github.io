@@ -8,7 +8,7 @@ This repository is an academic personal homepage for **Mengfei Li / 李梦飞**,
 name: Mengfei Li
 chinese_name: 李梦飞
 email: mfli22@m.fudan.edu.cn
-phone: private_not_public
+phone: do_not_publish
 affiliation: School of Management, Fudan University
 department: Department of Management Science
 advisor: Xiaole Wu
@@ -22,8 +22,9 @@ research_interests:
 
 ## Source Material
 
-- Resume reference: `/Users/murphy/个人信息/简历/李梦飞.docx`
-- Profile photo source: WeChat temp image copied into `images/profile.jpg`
+- Authoritative public Chinese CV: `files/Mengfei-Li-CV.pdf`
+- Public English CV source: `cv/Mengfei-Li-CV-English.docx`
+- Profile photo: `images/profile.jpg`
 
 Do not publish the phone number from the resume unless the user explicitly asks for it.
 
@@ -33,7 +34,7 @@ Do not publish the phone number from the resume unless the user explicitly asks 
 - Hosting target: GitHub Pages
 - Current repository: `MurphyLiCN/MengfeiLi.github.io`
 - Current Pages shape: project site with `baseurl: /MengfeiLi.github.io`
-- CV: web CV only
+- CV: web CV plus public Chinese and English PDF files; the English source DOCX is reproducibly generated
 
 ## Key Files
 
@@ -44,6 +45,9 @@ Do not publish the phone number from the resume unless the user explicitly asks 
 | `_pages/publications.html` | Research listing page |
 | `_pages/talks.html` | Talks listing page |
 | `_pages/cv.md` | Web CV |
+| `cv/Mengfei-Li-CV-English.docx` | Public English CV source document |
+| `files/Mengfei-Li-CV-English.pdf` | Public English PDF CV |
+| `files/Mengfei-Li-CV.pdf` | Authoritative public Chinese PDF CV |
 | `_publications/*.md` | Research entries |
 | `_talks/*.md` | Talk and conference entries |
 | `_teaching/*.md` | Teaching assistant entries |
@@ -72,6 +76,7 @@ npm run build:js
 - Avoid editing `_layouts/` and `_sass/` unless the user asks for structural or visual changes.
 - If JavaScript source changes, regenerate `assets/js/main.min.js` with `npm run build:js`.
 - Public CV changes should be made in `_pages/cv.md`.
+- Regenerate the English DOCX with `scripts/build_english_cv.py` after changing shared CV facts, export the PDF, then render and inspect every page.
 
 ## Open Items
 

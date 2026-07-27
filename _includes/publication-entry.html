@@ -1,0 +1,61 @@
+{% include base_path %}
+{% assign publication = include.publication %}
+{% assign publication_language = include.lang | default: "en" %}
+{% if publication_language == "zh" and publication.title_zh %}
+  {% assign publication_title = publication.title_zh %}
+{% elsif publication.title_en %}
+  {% assign publication_title = publication.title_en %}
+{% else %}
+  {% assign publication_title = publication.title %}
+{% endif %}
+
+<li class="publication-entry">
+  <a class="publication-entry__title" href="{{ base_path }}{{ publication.url }}">{{ publication_title }}</a>
+  <span class="publication-entry__details">
+    <span class="publication-entry__authors">
+      {% for author in publication.authors %}{% if author == site.author.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
+      {% if publication.author_note %}<span class="publication-entry__note">{{ publication.author_note }}</span>{% endif %}
+    </span>
+
+    {% if publication_language == "zh" %}
+      {% case publication.status %}
+        {% when "published" %}
+          发表于 <em>{{ publication.venue }}</em>{% if publication.pages %}，第 {{ publication.pages }} 页{% endif %}。
+        {% when "forthcoming" %}
+          已录用，待刊于 <em>{{ publication.venue }}</em>。
+        {% when "under-review" %}
+          正在 <em>{{ publication.venue }}</em> 第二轮审稿中。
+        {% when "working-paper" %}
+          工作论文。
+      {% endcase %}
+      {% if publication.excerpt_zh %}<span class="publication-entry__summary">{{ publication.excerpt_zh }}</span>{% endif %}
+{% else %}
+      {% assign publication_venue = publication.venue_en | default: publication.venue %}
+      {% case publication.status %}
+        {% when "published" %}
+          Published in <em>{{ publication_venue }}</em>{% if publication.pages %}, pp. {{ publication.pages }}{% endif %}.
+        {% when "forthcoming" %}
+          {{ publication.status_label }} in <em>{{ publication_venue }}</em>.
+        {% when "under-review" %}
+          {{ publication.status_label }} at <em>{{ publication_venue }}</em>.
+        {% when "working-paper" %}
+          {{ publication.status_label }}.
+      {% endcase %}
+      {% if include.show_summary and publication.excerpt %}<span class="publication-entry__summary">{{ publication.excerpt }}</span>{% endif %}
+    {% endif %}
+  </span>
+
+  {% if publication.paper_url or publication.ssrn_url or publication.doi or publication.pdf_url or publication.code_url or publication.software_url or publication.bibtex_url %}
+    <span class="publication-entry__links" aria-label="{% if publication_language == 'zh' %}论文资源{% else %}Paper resources{% endif %}">
+      {% if publication.paper_url %}<a href="{{ publication.paper_url }}" target="_blank" rel="noopener noreferrer">{{ publication.paper_label | default: "Paper" }}</a>{% endif %}
+      {% if publication.ssrn_url %}<a href="{{ publication.ssrn_url }}" target="_blank" rel="noopener noreferrer">Paper (SSRN)</a>{% endif %}
+      {% if publication.doi %}<a href="https://doi.org/{{ publication.doi }}" target="_blank" rel="noopener noreferrer">DOI</a>{% endif %}
+      {% if publication.pdf_url %}<a href="{{ publication.pdf_url }}" target="_blank" rel="noopener noreferrer">PDF</a>{% endif %}
+      {% if publication.code_url %}<a href="{{ publication.code_url }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
+      {% if publication.software_url %}<a href="{{ publication.software_url }}" target="_blank" rel="noopener noreferrer">Software</a>{% endif %}
+      {% if publication.bibtex_url %}<a href="{{ publication.bibtex_url }}" target="_blank" rel="noopener noreferrer">BibTeX</a>{% endif %}
+    </span>
+  {% elsif publication.status != "published" and publication.status != "forthcoming" %}
+    <span class="publication-entry__links"><a href="mailto:{{ site.author.email }}">Manuscript available upon request</a></span>
+  {% endif %}
+</li>

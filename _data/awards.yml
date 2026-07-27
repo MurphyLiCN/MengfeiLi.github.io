@@ -1,0 +1,51 @@
+- id: fudan-outstanding-student-role-model
+  title_en: "Fudan University Outstanding Student Role Model"
+  title_zh: "复旦大学优秀学生标兵"
+  organization_en: "Fudan University"
+  organization_zh: "复旦大学"
+  year: "2025"
+  note_en: "One of 20 university-wide recipients"
+  note_zh: "全校 20 名获奖者之一"
+  url: "https://www.fudan.edu.cn/2025/1211/c24a147742/page.htm"
+
+- id: poms-hk-best-student-paper-honorable-mention
+  title_en: "Honorable Mention, 15th POMS-HK International Conference Best Student Paper Award"
+  title_zh: "第十五届 POMS-HK 国际会议最佳学生论文奖荣誉提名"
+  organization_en: "POMS-HK International Conference"
+  organization_zh: "POMS-HK 国际会议"
+  year: "2025"
+
+- id: cargill-global-scholar
+  title_en: "Cargill Global Scholar"
+  title_zh: "嘉吉全球学者"
+  organization_en: "Cargill"
+  organization_zh: "嘉吉"
+  year: "2019-2021"
+
+- id: huawei-scholarship
+  title_en: "Huawei Scholarship / First-Class Outstanding Student Scholarship"
+  title_zh: "华为奖学金（优秀学生一等奖学金）"
+  organization_en: "Fudan University"
+  organization_zh: "复旦大学"
+  year: "2019-2020"
+
+- id: zhuobo-scholarship
+  title_en: "Zhuobo Scholarship"
+  title_zh: "卓博奖学金"
+  organization_en: "Fudan University"
+  organization_zh: "复旦大学"
+  year: "2022-2027"
+
+- id: zheng-zukang-scholarship
+  title_en: "Zheng Zukang Academic Scholarship"
+  title_zh: "郑祖康学业奖学金"
+  organization_en: "Fudan University"
+  organization_zh: "复旦大学"
+  year: "2020-2021"
+
+- id: fudan-outstanding-student
+  title_en: "Outstanding Student"
+  title_zh: "优秀学生"
+  organization_en: "Fudan University"
+  organization_zh: "复旦大学"
+  year: "2018-2019, 2020-2021, 2021-2022"

@@ -3,15 +3,34 @@
 <meta charset="utf-8">
 
 {% include seo.html %}
-{% include person-schema.html %}
+{% if page.url == "/" or page.url == "/index.html" %}{% include person-schema.html %}{% endif %}
 {% include publication-schema.html %}
 
+{% if site.atom_feed.hide != true %}
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% endif %}
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function () {
+    var theme = null;
+    try {
+      theme = window.localStorage.getItem('theme');
+    } catch (_error) {}
+    if (theme !== 'dark' && theme !== 'light') {
+      theme = window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light';
+    }
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  }());
 </script>
 
 <!-- For all browsers -->

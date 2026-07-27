@@ -1,14 +1,8 @@
 # 顶部导航条
 
 main:
-  - title: "Home"
-    url: /
-
   - title: "Research"
     url: /publications/
-
-  - title: "Projects"
-    url: /projects/
 
   - title: "Talks"
     url: /talks/

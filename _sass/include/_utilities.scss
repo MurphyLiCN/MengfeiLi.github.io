@@ -54,6 +54,7 @@ body:hover .visually-hidden button {
   font-size: 1em;
   font-weight: bold;
   padding: 15px 23px 14px;
+  color: var(--global-bg-color);
   background: var(--global-text-color);
   z-index: 100000;
   text-decoration: none;

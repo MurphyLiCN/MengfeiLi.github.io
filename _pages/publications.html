@@ -6,32 +6,26 @@ description: "Research by Mengfei Li on empirical operations management, causal 
 author_profile: true
 ---
 
-<p>My research combines empirical operations management with causal machine learning and structural estimation. Current topics include LLM-based survey simulation, manufacturing learning and consistency, heterogeneous newsvendor models, solar manufacturing, and supply chain resilience.</p>
+<p>{{ site.data.profile.research.statement_en }}</p>
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <p class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
 {% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+  {% for category in site.publication_category %}
+    <h2>{{ category[1].title }}</h2>
+    {% assign category_id = category[0] %}
+    {% include publication-list.html category=category_id show_summary=true %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+  {% include publication-list.html show_summary=true %}
 {% endif %}
 
+<h2 id="funded-applied-projects">Funded &amp; Applied Projects</h2>
+
+<p>Selected funded and applied projects connect my methodological research with manufacturing, energy, and supply-chain settings.</p>
+
+{% include project-list.html show_scope=true %}

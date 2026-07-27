@@ -1,5 +1,6 @@
 ---
 title: "Little-Treat Consumption: A Qualitative Analysis Using Generative Large Language Models (GLLMs)"
+title_zh: "小确幸消费：使用生成式大语言模型的质性分析"
 authors:
   - "Zhe Zhang"
   - "Handan Shi"
@@ -8,11 +9,16 @@ collection: publications
 category: working-papers
 permalink: /publication/2025-little-treat-consumption
 excerpt: "Develops and validates the construct of little-treat consumption through an AI-human hybrid workflow combining qualitative discovery, surveys, and GLLM robustness tests."
-date: 2026-01-01
-year: 2026
-status: "Working Paper"
-venue: "Working Paper"
-paperurl: ""
+excerpt_zh: "通过人机协同流程，结合质性探索、问卷调查与大语言模型稳健性测试，构建并验证小确幸消费概念。"
+status: working-paper
+status_label: "Working paper"
+sort_order: 7
+updated: 2026-07-27
+language: en
+keywords:
+  - consumer behavior
+  - qualitative research
+  - generative large language models
 ---
 
 ## Abstract

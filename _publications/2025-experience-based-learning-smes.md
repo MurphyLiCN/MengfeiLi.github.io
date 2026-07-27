@@ -1,37 +1,40 @@
 ---
-title: "Learning by Doing in SME Manufacturing"
+title: "Experience-Based Learning in SMEs: A Dual Perspective on Manufacturing Efficiency and Consistency"
+title_zh: "中小制造企业的经验学习：制造效率与一致性的双重视角"
 authors:
   - "Mengfei Li"
   - "Wenchang Zhang"
-  - "Cheng Yue"
-  - "Ming Liu"
+  - "Yue Cheng"
+  - "Liu Ming"
   - "Xiaole Wu"
 collection: publications
 category: under-review
 permalink: /publication/2025-experience-based-learning-smes
-excerpt: "Uses order-level ERP data to show how product-specific experience improves both manufacturing efficiency and consistency in SMEs."
-date: 2026-01-01
-year: 2026
-status: "Under Second-Round Review"
-venue: "Under second-round review at Management Science"
-paperurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302"
+excerpt: "Examines how hands-on experience changes manufacturing efficiency and consistency in SMEs and how learning-aware planning improves operating performance."
+excerpt_zh: "研究实践经验如何影响中小制造企业的运营效率与一致性，并将经验学习纳入运营规划。"
+status: under-review
+status_label: "Under second-round review"
+venue: "Management Science"
+display_date: "2025"
+sort_order: 3
+updated: 2026-07-27
+ssrn_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302"
+doi: "10.2139/ssrn.5273302"
+language: en
+keywords:
+  - SME manufacturing
+  - experience-based learning
+  - learning curve
+  - causal inference
+  - optimization
+featured: true
+featured_order: 2
+project_id: experience-based-learning-smes
 ---
 
 ## Abstract
 
-Small and medium-sized manufacturing enterprises (SMEs) often accumulate operational knowledge through repeated order fulfillment rather than formal improvement programs. This study examines whether product-specific experience improves manufacturing efficiency and consistency, and under what conditions this learning materializes. Using order-level ERP data and instrumental-variable estimation, we analyze end-to-end order-fulfillment time across four stages: procurement, preparation, production, and shipping. We find that experience improves both efficiency and consistency, though the effects vary. Preparation contributes most to total fulfillment time, while production exhibits the highest within-stage learning intensity. Nonparametric learning curves reveal an initial performance dip before sustained gains emerge. Survey-based mechanism evidence indicate that experience converts into performance through stage-specific conditions, including tacit/explicit knowledge, interconnectedness, digitalization, and AI use. Furthermore, learning depends on order context: large orders enhance learning opportunities, whereas urgent orders compress planning slack and attenuate benefits. Incorporating these experience-based capacity dynamics into operational planning can significantly improve profits.
-
-## Conference Presentations
-
-**Dissecting the Learning Curve for Supply Chain Efficiency: An Empirical Analysis**
-
-- 14th POMS-HK International Conference, Hong Kong, China, Jan 2024
-- 16th CSAMSE Conference, Xiamen, China, Jul 2024
-- 2024 INFORMS Annual Meeting, Seattle, USA, Oct 2024
-- 2024 DSI Annual Conference, Phoenix, USA, Nov 2024
-- 15th POMS-HK International Conference, Hong Kong, China, Jan 2025
-- Workshop on Empirical Operations Management, Hong Kong, China, Jan 2025 (presentation by the supervisor)
-- 35th POMS Annual Conference, Atlanta, USA, May 2025
+This study uses granular data from a digital-management platform to examine how cumulative production experience changes order-cycle efficiency and consistency in small and medium-sized manufacturers. The analysis identifies an initial performance dip followed by sustained improvement, with the preparation stage accounting for much of the gain. Large orders accelerate learning, while urgent orders weaken it. A learning-aware stochastic planning model translates these empirical patterns into operating decisions and improves profit relative to a benchmark that ignores learning.
 
 ## Award
 

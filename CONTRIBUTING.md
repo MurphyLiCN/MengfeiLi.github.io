@@ -1,8 +1,33 @@
-Contributions are welcome! 
+# Contributing
 
-Please add issues and make pull requests. There are no stupid questions. All ideas are welcome. This is a volunteer project. Be excellent to each other.
+This repository is Mengfei Li's public academic website rather than a generic AcademicPages template.
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## Before Editing
 
-Fork from master and go from there. Remember that this repository is intended to remain a generic, ready-to-fork template that demonstrates the features of academicpages.
+- Read `AGENTS.md` for identity, content, and privacy constraints.
+- Treat `_data/profile.yml`, `_data/projects.yml`, `_data/awards.yml`, publication front matter, and talk front matter as the canonical public sources.
+- Do not add a phone number, birth date, home address, private CV draft, local path, or confidential research file.
 
+## Content Changes
+
+- Add publications under `_publications/` using the established normalized status and resource fields.
+- Add presentations under `_talks/` with `sort_date`, `display_date`, `presentation_type`, and `paper_id` when applicable.
+- Update projects and awards in `_data/` rather than duplicating facts across pages.
+- Update both the English and Chinese summaries when a change affects both audiences.
+- Regenerate the English DOCX/PDF CV after changing facts that appear in it.
+
+## Required Checks
+
+```bash
+npm ci --ignore-scripts
+bundle install
+npm run check:content
+npm run build:js
+JEKYLL_ENV=production bundle exec jekyll build --safe --trace
+npm run check:build
+npm run test:e2e
+```
+
+If JavaScript source changes, commit the rebuilt `assets/js/main.min.js`. If dependencies change, commit both lock files.
+
+Do not commit, push, deploy, or open a pull request on someone else's behalf without explicit authorization.

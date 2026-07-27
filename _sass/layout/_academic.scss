@@ -1,0 +1,116 @@
+/* ==========================================================================
+   ACADEMIC CONTENT LISTS
+   ========================================================================== */
+
+.publication-list,
+.project-list,
+.award-list,
+.talk-list {
+  margin: 0 0 1.4rem;
+  padding-left: 1.25rem;
+}
+
+.publication-entry,
+.project-list li,
+.award-list li,
+.talk-list li {
+  margin-bottom: 0.85rem;
+  line-height: 1.55;
+}
+
+.publication-entry__title {
+  color: var(--global-text-color);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.publication-entry__details,
+.publication-entry__authors,
+.publication-entry__summary,
+.publication-entry__links {
+  display: block;
+}
+
+.publication-entry__details {
+  margin-top: 0.16rem;
+}
+
+.publication-entry__note,
+.publication-entry__summary {
+  color: var(--global-text-color-light);
+}
+
+.publication-entry__summary {
+  margin-top: 0.22rem;
+}
+
+.publication-entry__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.8rem;
+  margin-top: 0.28rem;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  font-weight: 700;
+}
+
+.publication-authors {
+  margin-bottom: 0.35rem;
+
+  span {
+    display: block;
+    color: var(--global-text-color-light);
+    font-style: italic;
+  }
+}
+
+.publication-status {
+  margin: 0.25rem 0 0.55rem;
+}
+
+.publication-resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.9rem;
+  margin: 0 0 1.25rem;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  font-weight: 700;
+}
+
+.publication-list--compact .publication-entry__summary {
+  display: none;
+}
+
+.project-list li > span {
+  display: block;
+  margin-top: 0.18rem;
+  color: var(--global-text-color-light);
+}
+
+.project-list li > a {
+  display: inline-block;
+  margin-top: 0.18rem;
+  font-weight: 700;
+}
+
+.cv-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.cv-downloads .btn {
+  margin: 0;
+}
+
+@media print {
+  .cv-downloads {
+    display: none;
+  }
+
+  .publication-entry__links {
+    font-size: 9pt;
+  }
+}

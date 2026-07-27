@@ -1,0 +1,17 @@
+{% include base_path %}
+{% assign project_language = include.lang | default: "en" %}
+<ul class="project-list">
+  {% for project in site.data.projects %}
+    <li>
+      {% if project_language == "zh" %}
+        <strong>{{ project.display_date_zh }}</strong>，{{ project.role_zh }}，{{ project.funder_zh }}，<span lang="zh-CN">《{{ project.title_zh }}》</span>。
+        {% if include.show_scope and project.question_or_scope_zh %}<span>{{ project.question_or_scope_zh }}</span>{% endif %}
+        {% if project.related_publication %}<a href="{{ base_path }}{{ project.related_publication }}">相关研究</a>。{% endif %}
+      {% else %}
+        <strong>{{ project.display_date_en }}</strong>. <strong>{{ project.role_en }}</strong>, {{ project.funder_en }}, <em>{{ project.title_en }}</em>.
+        {% if include.show_scope and project.question_or_scope_en %}<span>{{ project.question_or_scope_en }}</span>{% endif %}
+        {% if project.related_publication %}<a href="{{ base_path }}{{ project.related_publication }}">Related research</a>.{% endif %}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

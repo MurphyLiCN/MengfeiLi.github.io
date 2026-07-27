@@ -1,12 +1,8 @@
 # Deployment Notes
 
-Current repository:
+Repository: `MurphyLiCN/MengfeiLi.github.io`
 
-```text
-MurphyLiCN/MengfeiLi.github.io
-```
-
-Current `_config.yml` is configured as a GitHub Pages **project site**:
+The site is currently a GitHub Pages project site:
 
 ```yaml
 url: "https://murphylicn.github.io"
@@ -14,22 +10,28 @@ baseurl: "/MengfeiLi.github.io"
 repository: "MurphyLiCN/MengfeiLi.github.io"
 ```
 
-With this setup, the expected Pages URL is:
+Public URL: <https://murphylicn.github.io/MengfeiLi.github.io/>
 
-```text
-https://murphylicn.github.io/MengfeiLi.github.io/
-```
+## Automated Deployment
 
-## Local Build
+`.github/workflows/pages.yml` builds with the committed Ruby, Node, Bundler, npm, and gem lock files. It runs the content checker, regenerates and verifies JavaScript, performs a safe production Jekyll build, validates internal links and metadata, uploads the Pages artifact, and deploys it.
+
+The workflow runs on pushes to `main` and via manual dispatch. It does not publish from local builds.
+
+## Local Production Check
 
 ```bash
-bundle exec jekyll build
-bundle exec jekyll serve --livereload
+npm ci --ignore-scripts
+bundle install
+npm run check:content
+npm run build:js
+JEKYLL_ENV=production bundle exec jekyll build --safe --trace
+python3 scripts/check_built_site.py _site
 ```
 
-## If Switching to a User Site
+## Switching to a User Site
 
-If the repository is renamed or moved to `<username>/<username>.github.io`, update `_config.yml`:
+If the repository is moved to `<username>/<username>.github.io`, update:
 
 ```yaml
 url: "https://<username>.github.io"
@@ -37,21 +39,12 @@ baseurl: ""
 repository: "<username>/<username>.github.io"
 ```
 
-## If Using a Custom Domain
+Update `BASEURL` in `scripts/check_built_site.py`, the Playwright default URL, and the README URLs at the same time.
 
-1. Create `CNAME` at the repository root with one line:
+## Adding a Custom Domain
 
-   ```text
-   your-domain.com
-   ```
-
-2. Update `_config.yml`:
-
-   ```yaml
-   url: "https://your-domain.com"
-   baseurl: ""
-   ```
-
-3. Configure DNS with the standard GitHub Pages records.
-
-4. In GitHub Settings -> Pages, set the custom domain and enable HTTPS after DNS validation passes.
+1. Add a root `CNAME` file containing the domain.
+2. Set `_config.yml` `url` to the HTTPS custom domain and `baseurl` to an empty string.
+3. Update the checker, Playwright default URL, and documentation.
+4. Configure the standard GitHub Pages DNS records.
+5. Set the custom domain in GitHub Pages settings and enable HTTPS after DNS validation.

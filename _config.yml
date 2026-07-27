@@ -85,9 +85,11 @@ author:
 # Match the `category:` field in each _publications/*.md
 publication_category:
   published-papers:
-    title: 'Published Papers'
+    title: 'Published'
+  forthcoming:
+    title: 'Forthcoming'
   under-review:
-    title: 'Papers Under Review'
+    title: 'Under Review'
   working-papers:
     title: 'Working Papers'
   # Uncomment / add as career progresses:
@@ -100,7 +102,7 @@ publication_category:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
@@ -130,7 +132,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true
   path                   : # blank (default) uses feed.xml
 
 
@@ -163,14 +165,13 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               : false
   google:
     tracking_id          :
 
 
 # Reading Files
 include:
-  - .htaccess
   - _pages
 exclude:
   - "*.sublime-project"
@@ -186,7 +187,6 @@ exclude:
   - CHANGELOG
   - Capfile
   - config
-  - Dockerfile
   - Gemfile
   - Gemfile.lock
   - Gruntfile.js
@@ -207,14 +207,9 @@ exclude:
   - INFO_TO_PROVIDE.md
   - DEPLOY.md
   - CONTRIBUTING.md
-  - docker-compose.yaml
   - .devcontainer
   - markdown_generator
   - scripts
-  # NOTE: "简历/" and "my private materials/" are also gitignored — they don't
-  # exist on GitHub Pages' build at all. We don't add them to Jekyll exclude
-  # because Jekyll 3.10's entry_filter throws encoding errors on UTF-8 paths.
-  # Locally they leak into _site/ as static copies — harmless, not pushed.
 keep_files:
   - .git
   - .svn
@@ -253,7 +248,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
     output: true
@@ -287,8 +282,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -296,8 +291,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   # _portfolio
   - scope:
       path: ""
@@ -305,8 +300,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comment: true
+      share: false
+      comments: false
   # _talks
   - scope:
       path: ""
@@ -314,7 +309,9 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
+      robots: "noindex,follow"
+      sitemap: false
 
 
 # Sass/SCSS
@@ -332,21 +329,13 @@ timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jemoji
 
 # Mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jemoji
 
 
 # Archives

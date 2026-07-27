@@ -1,8 +1,8 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
-description: "Academic CV of Mengfei Li, Management Science PhD candidate at Fudan University: education, research, publications, presentations, awards, and service."
+description: "Academic CV of Mengfei Li, a Management Science PhD candidate at Fudan University on the 2026-2027 Operations Management job market."
 author_profile: true
 redirect_from:
   - /resume
@@ -10,97 +10,75 @@ redirect_from:
 
 {% include base_path %}
 
-<p>
+<p class="cv-downloads">
+  <a href="{{ base_path }}/files/Mengfei-Li-CV-English.pdf" class="btn" download="Mengfei-Li-CV-English.pdf">
+    English PDF
+  </a>
   <a href="{{ base_path }}/files/Mengfei-Li-CV.pdf" class="btn" download="Mengfei-Li-CV.pdf">
-    <i class="fas fa-file-pdf" aria-hidden="true"></i>
-    Download PDF CV (Chinese)
+    中文 PDF
   </a>
 </p>
 
-Education
-======
-* **Ph.D. Candidate in Management Science**, *Sep 2022 - present*
-  * Department of Management Science, School of Management, Fudan University, Shanghai
-  * Advisor: **Prof. Xiaole Wu**
-* **Visiting Ph.D. Student**, *Sep 2024 - Dec 2024*
-  * Operations & Decision Technologies, Kelley School of Business, Indiana University
-  * Host: **Prof. Wenchang Zhang**
-* **B.S. in Statistics**, *Sep 2018 - Jun 2022*
-  * Department of Statistics, School of Management, Fudan University, Shanghai
-  * Advisor: **Prof. Feiyu Jiang**
+## Education
 
-Research Interests
-======
-* AI-based Empirical Operations Management
+- **Ph.D. Candidate in Management Science**, Fudan University, Sep 2022 - Jun 2027 (expected)
+  - School of Management, Department of Management Science
+  - Advisor: **Prof. Xiaole Wu**
+- **Visiting Ph.D. Student**, Indiana University, Sep 2024 - Dec 2024
+  - Kelley School of Business, Operations & Decision Technologies
+  - Host: **Prof. Wenchang Zhang**
+- **B.S. in Statistics**, Fudan University, Sep 2018 - Jun 2022
+  - School of Management, Department of Statistics
+  - Advisor: **Prof. Feiyu Jiang**
 
-Research Projects
-======
-* **Principal Investigator**, National Natural Science Foundation of China, Young Student Basic Research Project (Doctoral Students), Integrating Causal Machine Learning and Structural Model Estimation: Theory and Optimization Applications, Jan 2025 - Dec 2027
-* Participant, National Natural Science Foundation of China, Major Project, Theoretical Foundations of Supply Chain Resilience and Security, Jan 2023 - Dec 2027
-* Participant, State Grid Shanghai Electric Power Company, management consulting project, Power Grid Supply Chain Network Resilience and Security Analysis Based on the SPOT Framework, Feb 2025 - Feb 2026
-* Participant, China Energy Research Society, research consulting project, Four-tier Structural Model Construction Service Project for the Photovoltaic Industry, Dec 2025 - Dec 2026
+## Research Interests
 
-Publications and Manuscripts
-======
-**Published**
+<ul>
+  {% for interest in site.data.profile.research.interests %}<li>{{ interest }}</li>{% endfor %}
+</ul>
 
-* Ji Huang, **Mengfei Li**, Shuai Shao (listed in alphabetical order). "[Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions]({{ base_path }}/publication/2026-distribution-shift-alignment)." *Findings of the Association for Computational Linguistics: ACL 2026* (CCF-A), pp. 9395-9409. [ACL Anthology](https://aclanthology.org/2026.findings-acl.457/){:target="_blank" rel="noopener noreferrer"} · [DOI](https://doi.org/10.18653/v1/2026.findings-acl.457){:target="_blank" rel="noopener noreferrer"}.
-* **Mengfei Li**, Xiaole Wu, Yang Chen, Jinyan Zhu. "[供应链韧性度量指标：结构变点（SCP）与加权累计损失（WCL） (Metrics of Supply Chain Resilience: Structural Change-Points and Weighted Cumulative Loss)]({{ base_path }}/publication/2025-supply-chain-resilience-metrics)." Accepted and forthcoming in *管理科学学报 (Journal of Management Sciences in China)*. [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5218942){:target="_blank" rel="noopener noreferrer"}.
+## Publications and Manuscripts
 
-**Under Review**
+### Published
 
-* **Mengfei Li**, Wenchang Zhang, Cheng Yue, Ming Liu, Xiaole Wu. "[Learning by Doing in SME Manufacturing]({{ base_path }}/publication/2025-experience-based-learning-smes)." Under second-round review at *Management Science*. [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273302){:target="_blank" rel="noopener noreferrer"}.
+{% include publication-list.html category="published-papers" %}
 
-**Working Papers**
+### Forthcoming
 
-* **Mengfei Li**, Guihua Wang, Wenchang Zhang. "[A Structural Forest Estimation of Heterogeneous Newsvendor Models]({{ base_path }}/publication/2025-structural-forest-newsvendor)."
-* Ji Huang, **Mengfei Li**, Shuai Shao (listed in alphabetical order). "[LLMs Simulate Survey Response for Joint Distribution of Multiple Questions]({{ base_path }}/publication/2025-llm-survey-joint-distribution)."
-* Ziyin Bin, **Mengfei Li**, Zibo Liu, Lezhen Wu, Xiaole Wu (listed in alphabetical order). "[Competition, Overcapacity, and Consolidation in a Multi-Tier Solar Manufacturing Chain]({{ base_path }}/publication/2025-photovoltaic-capacity-decision)."
-* Zhe Zhang, Handan Shi, **Mengfei Li**. "[Little-Treat Consumption: A Qualitative Analysis Using Generative Large Language Models (GLLMs)]({{ base_path }}/publication/2025-little-treat-consumption)."
+{% include publication-list.html category="forthcoming" %}
 
-Conference Presentations
-======
-**Dissecting the Learning Curve for Supply Chain Efficiency: An Empirical Analysis**
+### Under Review
 
-* 14th POMS-HK International Conference, Hong Kong, China, Jan 2024
-* 16th CSAMSE Conference, Xiamen, China, Jul 2024
-* 2024 INFORMS Annual Meeting, Seattle, USA, Oct 2024
-* 2024 DSI Annual Conference, Phoenix, USA, Nov 2024
-* 15th POMS-HK International Conference, Hong Kong, China, Jan 2025
-* Workshop on Empirical Operations Management, Hong Kong, China, Jan 2025 (presentation by the supervisor)
-* 35th POMS Annual Conference, Atlanta, USA, May 2025
+{% include publication-list.html category="under-review" %}
 
-**A Structural Forest Estimation of Heterogeneous Newsvendor Models**
+### Working Papers
 
-* 35th POMS Annual Conference, Atlanta, USA, May 2025
-* 2025 INFORMS International Meeting, Singapore, Jul 2025
+{% include publication-list.html category="working-papers" %}
 
-Conference Participation
-======
-* NSFC 408th Shuangqing Forum, "Green Computing Service System Management," Beijing, Apr 2025
+## Grants and Research Projects
 
-Academic Service
-======
-* Anonymous Reviewer, *Journal of Asian Economics*
+{% include project-list.html lang="en" compact=true %}
 
-Books, Data Resources, and Software
-======
-* Participant, National Development and Intelligent Governance Laboratory Basic Research and Visualization Platform, Fudan University
-* Participant, *China Foreign Merchandise Trade and Supply Chain Volatility Index*, Fudan University Global Supply Chain Research Center
-* Contributor, *Operations Management in the Digital Era* (tentative title), edited by Xiaole Wu et al.
-* Creator and maintainer, R package **SFHNV**
+## Conference Presentations
 
-Honors and Awards
-======
-* Outstanding Student Model, Fudan University, 2025 (10 students per year)
-* Honorable Mention, 15th POMS-HK International Conference Best Student Paper Award, 2025 (6 students per year)
-* Cargill Global Scholar, Cargill, 2019 - 2021 (15 students per year)
-* Huawei Scholarship / First-Class Outstanding Student Scholarship, Fudan University, 2019 - 2020
-* Zhuobo Scholarship, Fudan University, 2022 - 2027
-* Zheng Zukang Academic Scholarship, Fudan University, 2020 - 2021
-* Outstanding Student, Fudan University, 2018 - 2019, 2020 - 2021, 2021 - 2022
+{% include talk-list.html context="cv" show_participation=true %}
 
-Teaching Experience
-======
-* **Teaching Assistant**, MBA course: Science and Technology Innovation Young Cadre Program (科创青干营)
-* **Teaching Assistant**, undergraduate course: Operations Management
+## Honors and Awards
+
+{% include award-list.html lang="en" %}
+
+## Teaching Experience
+
+- **Teaching Assistant**, MBA course: Science and Technology Innovation Young Cadre Program (科创青干营)
+- **Teaching Assistant**, undergraduate course: Operations Management
+
+## Academic Service
+
+- Anonymous reviewer, *Journal of Asian Economics*
+
+## Books, Data Resources, and Software
+
+- Participant, National Development and Intelligent Governance Laboratory Basic Research and Visualization Platform, Fudan University
+- Participant, *China Foreign Merchandise Trade and Supply Chain Volatility Index*, Fudan University Global Supply Chain Research Center
+- Contributor, *Operations Management in the Digital Era* (tentative title), edited by Xiaole Wu et al.
+- Creator and maintainer, R package [SFHNV](https://github.com/MurphyLiCN/SFHNV){:target="_blank" rel="noopener noreferrer"}

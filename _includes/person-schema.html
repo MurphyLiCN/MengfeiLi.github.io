@@ -45,6 +45,7 @@
       "givenName": "Mengfei",
       "familyName": "Li",
       "jobTitle": "PhD Candidate in Management Science",
+      "description": {{ site.data.profile.job_market.statement_en | jsonify }},
       "url": {{ schema_home_url | jsonify }},
       "mainEntityOfPage": {
         "@id": {{ schema_profile_id | jsonify }}
@@ -53,7 +54,9 @@
         "@type": "ImageObject",
         "@id": {{ schema_image_id | jsonify }},
         "url": {{ schema_image_url | jsonify }},
-        "contentUrl": {{ schema_image_url | jsonify }}
+        "contentUrl": {{ schema_image_url | jsonify }},
+        "width": 1280,
+        "height": 1280
       },
       "email": {{ site.author.email | prepend: "mailto:" | jsonify }},
       "affiliation": {
@@ -66,13 +69,7 @@
           "addressCountry": "CN"
         }
       },
-      "knowsAbout": [
-        "AI-based Empirical Operations Management",
-        "Causal Machine Learning",
-        "Structural Model Estimation",
-        "Manufacturing Efficiency and Consistency",
-        "Supply Chain Resilience"
-      ],
+      "knowsAbout": {{ site.data.profile.research.interests | jsonify }},
       "sameAs": [
         {%- assign same_as_separator = "" -%}
         {%- if site.author.googlescholar -%}
@@ -99,8 +96,3 @@
   ]
 }
 </script>
-
-<meta name="author" content="Mengfei Li">
-<meta name="DC.creator" content="Mengfei Li">
-<meta name="DC.creator" content="Li Mengfei">
-<meta name="DC.creator" content="李梦飞">

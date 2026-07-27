@@ -1,0 +1,11 @@
+{% if page.collection == "publications" and page.project_id %}
+  {% assign related_talks = site.talks | where: "paper_id", page.project_id | sort: "sort_date" | reverse %}
+  {% if related_talks.size > 0 %}
+    <h2>Conference Presentations</h2>
+    <ul class="talk-list">
+      {% for talk in related_talks %}
+        <li><a href="{{ site.baseurl }}{{ talk.url }}">{{ talk.venue }}</a>, {{ talk.location }}, {{ talk.display_date }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endif %}

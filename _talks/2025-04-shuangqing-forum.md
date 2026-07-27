@@ -1,10 +1,12 @@
 ---
 title: "Green Computing Service System Management"
 collection: talks
-type: "Conference participation"
+presentation_type: "Conference participation"
+participant: "Mengfei Li"
 permalink: /talks/2025-04-shuangqing-forum
 venue: "NSFC 408th Shuangqing Forum"
-date: 2025-04-01
+sort_date: "2025-04"
+display_date: "April 2025"
 location: "Beijing, China"
 ---
 

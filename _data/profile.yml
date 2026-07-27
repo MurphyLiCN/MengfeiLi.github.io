@@ -1,0 +1,18 @@
+job_market:
+  cycle: "2026-2027"
+  field_en: "Operations Management"
+  field_zh: "运营管理"
+  expected_graduation_en: "June 2027"
+  expected_graduation_zh: "2027 年 6 月"
+  statement_en: "On the 2026-2027 academic job market for tenure-track positions in Operations Management."
+  statement_zh: "正在参加 2026-2027 学年运营管理方向的国际学术求职。"
+
+research:
+  statement_en: "I study how firms learn, adapt, and remain resilient in complex operational environments. My research combines causal machine learning and structural estimation with large-scale manufacturing and supply-chain data."
+  statement_zh: "我的研究关注企业如何在复杂运营环境中学习、适应并提升韧性，主要将因果机器学习与结构模型估计应用于大规模制造与供应链数据。"
+  interests:
+    - "AI-based Empirical Operations Management"
+    - "Causal Machine Learning"
+    - "Structural Model Estimation"
+    - "Manufacturing Learning, Efficiency, and Consistency"
+    - "Supply Chain Resilience"

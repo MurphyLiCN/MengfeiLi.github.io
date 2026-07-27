@@ -1,0 +1,61 @@
+- id: nsfc-young-student
+  title_en: "Integrating Causal Machine Learning and Structural Model Estimation: Theory and Optimization Applications"
+  title_zh: "因果机器学习与结构模型估计的结合理论研究与优化应用"
+  funder_en: "National Natural Science Foundation of China, Young Student Basic Research Project (Doctoral Students)"
+  funder_zh: "国家自然科学基金委员会青年学生基础研究项目（博士研究生）"
+  role_en: "Principal Investigator"
+  role_zh: "项目负责人"
+  start: "2025-01"
+  end: "2027-12"
+  display_date_en: "Jan 2025 - Dec 2027"
+  display_date_zh: "2025 年 1 月至 2027 年 12 月"
+  status: active
+  question_or_scope_en: "Develops theory and optimization applications that integrate causal machine learning with structural model estimation."
+  question_or_scope_zh: "研究因果机器学习与结构模型估计的结合理论及其优化应用。"
+
+- id: nsfc-supply-chain-resilience
+  title_en: "Theoretical Foundations of Supply Chain Resilience and Security"
+  title_zh: "供应链韧性与安全基础理论"
+  funder_en: "National Natural Science Foundation of China, Major Project"
+  funder_zh: "国家自然科学基金委员会重大项目"
+  role_en: "Participant"
+  role_zh: "项目参与人"
+  start: "2023-01"
+  end: "2027-12"
+  display_date_en: "Jan 2023 - Dec 2027"
+  display_date_zh: "2023 年 1 月至 2027 年 12 月"
+  status: active
+  question_or_scope_en: "Studies foundational theory for measuring and managing supply chain resilience and security."
+  question_or_scope_zh: "研究供应链韧性与安全的基础理论、度量与管理。"
+  related_publication: "/publication/2025-supply-chain-resilience-metrics"
+
+- id: state-grid-resilience
+  title_en: "Power Grid Supply Chain Network Resilience and Security Analysis Based on the SPOT Framework"
+  title_zh: "基于 SPOT 框架的电网供应链网络韧性与安全分析"
+  funder_en: "State Grid Shanghai Electric Power Company, Management Consulting Project"
+  funder_zh: "国网上海电力公司管理咨询项目"
+  role_en: "Participant"
+  role_zh: "课题参与人"
+  start: "2025-02"
+  end: "2026-12"
+  display_date_en: "Feb 2025 - Dec 2026"
+  display_date_zh: "2025 年 2 月至 2026 年 12 月"
+  status: active
+  question_or_scope_en: "Analyzes resilience and security in power-grid supply chain networks using the SPOT framework."
+  question_or_scope_zh: "使用 SPOT 框架分析电网供应链网络的韧性与安全。"
+
+- id: photovoltaic-structural-model
+  title_en: "Four-Tier Structural Model Construction for the Photovoltaic Industry"
+  title_zh: "光伏行业四层级结构模型构建服务项目"
+  funder_en: "China Energy Research Society, Research Consulting Project"
+  funder_zh: "中国能源研究会研究咨询项目"
+  role_en: "Participant"
+  role_zh: "课题参与人"
+  start: "2025-12"
+  end: "2026-12"
+  display_date_en: "Dec 2025 - Dec 2026"
+  display_date_zh: "2025 年 12 月至 2026 年 12 月"
+  status: active
+  question_or_scope_en: "Builds structural models for capacity and competition across four tiers of photovoltaic manufacturing."
+  question_or_scope_zh: "构建光伏制造四个层级的产能与竞争结构模型。"
+  related_publication: "/publication/2025-photovoltaic-capacity-decision"

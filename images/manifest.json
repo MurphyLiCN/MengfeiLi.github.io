@@ -2,11 +2,16 @@
 layout: none
 permalink: /images/manifest.json
 ---
+{% assign manifest_scope = site.baseurl | append: "/" %}
 {
 	"name": {{ site.title | jsonify }},
 	"short_name": {{ site.name | jsonify }},
 	"description": {{ site.description | jsonify }},
-	"start_url": "{{ site.baseurl | default: '/' }}",
+	"start_url": "{{ manifest_scope }}",
+	"scope": "{{ manifest_scope }}",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#ffffff",
 	"lang": {{ site.locale | default: "en" | jsonify }},
 	"icons": [
 		{

@@ -3,9 +3,10 @@ layout: default
 ---
 
 {% include base_path %}
-{% assign paperurl = page.paperurl | default: "" | strip %}
+{% assign paperurl = page.paper_url | default: page.paperurl | default: "" | strip %}
 {% assign slidesurl = page.slidesurl | default: "" | strip %}
 {% assign bibtexurl = page.bibtexurl | default: "" | strip %}
+{% assign display_title = page.title_en | default: page.title %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
@@ -17,26 +18,40 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main">
+<main id="main">
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="{% if page.collection == 'publications' %}https://schema.org/ScholarlyArticle{% else %}https://schema.org/CreativeWork{% endif %}">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if display_title %}<meta itemprop="headline" content="{{ display_title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.collection == "publications" and page.status == "published" and page.publication_date %}<meta itemprop="datePublished" content="{{ page.publication_date }}">{% elsif page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.updated %}<meta itemprop="dateModified" content="{{ page.updated }}">{% elsif page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if display_title %}<h1 class="page__title" itemprop="headline">{{ display_title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% if page.authors and page.collection == 'publications' %}
-            <p class="page__meta" itemprop="author">{{ page.authors | join: ", " }}</p>
+            <p class="page__meta publication-authors" itemprop="author">
+              {% for author in page.authors %}{% if author == site.author.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+              {% if page.author_note %}<span>{{ page.author_note }}</span>{% endif %}
+            </p>
           {% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
-        {% if page.modified %}
+        {% if page.collection == "publications" %}
+          {% assign display_venue = page.venue_en | default: page.venue %}
+          <p class="publication-status">
+            {% case page.status %}
+              {% when "published" %}Published in <em>{{ display_venue }}</em>{% if page.pages %}, pp. {{ page.pages }}{% endif %}.
+              {% when "forthcoming" %}{{ page.status_label }} in <em>{{ display_venue }}</em>.
+              {% when "under-review" %}{{ page.status_label }} at <em>{{ display_venue }}</em>.
+              {% when "working-paper" %}{{ page.status_label }}.
+            {% endcase %}
+          </p>
+          {% include publication-resources.html publication=page %}
+        {% elsif page.modified %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% endif %}
         
@@ -55,6 +70,11 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
+        {% if page.collection == "publications" %}
+          {% include related-talks.html %}
+        {% endif %}
+
+        {% if page.collection != "publications" %}
         {% if paperurl != "" or slidesurl != "" or bibtexurl != "" %}
           <p style="font-size: smaller">
             {% assign has_download_link = false %}
@@ -68,6 +88,7 @@ layout: default
               {% if has_download_link %} | {% endif %}<a href="{{ bibtexurl }}" target="_blank" rel="noopener noreferrer">Download Bibtex</a>
             {% endif %}
           </p>
+        {% endif %}
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn"{% if page.link contains "://" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
@@ -103,4 +124,4 @@ layout: default
       </div>
     </div>
   {% endif %}
-</div>
+</main>
