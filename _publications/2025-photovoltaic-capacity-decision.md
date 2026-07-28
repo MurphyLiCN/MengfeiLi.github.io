@@ -11,7 +11,7 @@ collection: publications
 category: working-papers
 permalink: /publication/2025-photovoltaic-capacity-decision
 excerpt: "Estimates structural models across four tiers of the solar manufacturing chain to study capacity, cost rigidity, competition, and consolidation."
-excerpt_zh: "估计光伏制造四个层级的结构模型，研究产能、成本刚性、竞争与行业整合。"
+excerpt_zh: "估计光伏产业链四个主要环节的结构模型，研究产能决策、成本刚性、市场竞争与行业整合。"
 status: working-paper
 status_label: "Working paper"
 sort_order: 6

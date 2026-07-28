@@ -25,6 +25,8 @@
 {% else %}
   {% assign seo_image_url = seo_image_path | prepend: "/images/" | prepend: seo_url %}
 {% endif %}
+{% assign seo_image_alt = "Portrait of Mengfei Li" %}
+{% if page.lang contains "zh" %}{% assign seo_image_alt = "李梦飞个人照片" %}{% endif %}
 
 <title>{{ seo_title }}{% if paginator and paginator.page != 1 %} {{ site.title_separator }} Page {{ paginator.page }}{% endif %}</title>
 <meta name="description" content="{{ seo_description }}">
@@ -69,7 +71,7 @@
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="1280">
 <meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:alt" content="Portrait of Mengfei Li">
+<meta property="og:image:alt" content="{{ seo_image_alt }}">
 {% if og_type == "profile" %}
   <meta property="profile:first_name" content="Mengfei">
   <meta property="profile:last_name" content="Li">
@@ -86,7 +88,7 @@
 <meta name="twitter:description" content="{{ seo_description }}">
 <meta name="twitter:url" content="{{ canonical_url }}">
 <meta name="twitter:image" content="{{ seo_image_url }}">
-<meta name="twitter:image:alt" content="Portrait of Mengfei Li">
+<meta name="twitter:image:alt" content="{{ seo_image_alt }}">
 {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
 {% endif %}

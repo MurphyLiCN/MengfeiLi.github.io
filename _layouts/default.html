@@ -15,7 +15,7 @@ layout: compress
   <body>
 
     {% include browser-upgrade.html %}
-    <a class="screen-reader-shortcut" href="#main">Skip to main content</a>
+    <a class="screen-reader-shortcut" href="#main">{% if page.lang contains "zh" %}跳至主要内容{% else %}Skip to main content{% endif %}</a>
     {% include masthead.html %}
 
     {{ content }}

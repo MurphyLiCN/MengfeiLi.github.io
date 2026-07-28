@@ -2,9 +2,11 @@
 
 main:
   - title: "Research"
+    title_zh: "研究成果"
     url: /publications/
 
   - title: "Talks"
+    title_zh: "学术报告"
     url: /talks/
 
   # Teaching: hidden from nav (2026-05-12) — TA work, not actual teaching.
@@ -13,7 +15,10 @@ main:
   #   url: /teaching/
 
   - title: "CV"
+    title_zh: "简历"
     url: /cv/
 
   - title: "中文"
+    title_zh: "English"
     url: /zh/
+    url_zh: /

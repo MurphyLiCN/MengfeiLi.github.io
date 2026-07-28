@@ -9,7 +9,7 @@ collection: publications
 category: working-papers
 permalink: /publication/2025-structural-forest-newsvendor
 excerpt: "Develops a structural forest estimator that embeds the newsvendor optimality condition into tree-based splitting to estimate heterogeneous cost ratios."
-excerpt_zh: "将报童模型最优条件嵌入树模型划分过程，用于估计异质成本权衡。"
+excerpt_zh: "将报童模型的最优性条件嵌入树模型的节点划分过程，以估计异质性成本比率。"
 status: working-paper
 status_label: "Working paper"
 sort_order: 4

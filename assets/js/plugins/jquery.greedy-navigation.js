@@ -15,6 +15,10 @@
     if (!button || !visible || !hidden) return;
 
     var breakpoints = [];
+    var usesChineseLabels =
+      (document.documentElement.getAttribute("lang") || "")
+        .toLowerCase()
+        .indexOf("zh") === 0;
 
     function setDropdown(open) {
       var hasItems = hidden.children.length > 0;
@@ -52,7 +56,7 @@
       button.hidden = hidden.children.length === 0;
       button.setAttribute(
         "aria-label",
-        "More navigation links" +
+        (usesChineseLabels ? "更多导航链接" : "More navigation links") +
           (hidden.children.length ? " (" + hidden.children.length + ")" : "")
       );
       if (button.hidden) setDropdown(false);

@@ -1,11 +1,12 @@
 ---
 title: "Distribution Shift Alignment Helps LLMs Simulate Survey Response Distributions"
-title_zh: "分布偏移对齐帮助大语言模型模拟调查响应分布"
+title_zh: "分布偏移对齐可提升大语言模型的调查响应分布模拟能力"
 authors:
   - "Ji Huang"
   - "Mengfei Li"
   - "Shuai Shao"
 author_note: "Authors listed alphabetically."
+author_note_zh: "作者按姓氏英文字母顺序排列。"
 collection: publications
 category: published-papers
 permalink: /publication/2026-distribution-shift-alignment

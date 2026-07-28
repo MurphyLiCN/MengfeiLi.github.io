@@ -10,6 +10,10 @@
     ? window.matchMedia("(prefers-color-scheme: dark)")
     : null;
 
+  function usesChineseLabels() {
+    return (root.getAttribute("lang") || "").toLowerCase().indexOf("zh") === 0;
+  }
+
   function readTheme() {
     try {
       var stored = window.localStorage.getItem("theme");
@@ -37,11 +41,12 @@
     if (!button || !icon) return;
 
     var isDark = theme === "dark";
+    var label = isDark ? "Switch to light theme" : "Switch to dark theme";
+    if (usesChineseLabels()) {
+      label = isDark ? "切换到浅色主题" : "切换到深色主题";
+    }
     button.setAttribute("aria-pressed", String(isDark));
-    button.setAttribute(
-      "aria-label",
-      isDark ? "Switch to light theme" : "Switch to dark theme"
-    );
+    button.setAttribute("aria-label", label);
     icon.textContent = isDark ? "☾" : "☀";
   }
 

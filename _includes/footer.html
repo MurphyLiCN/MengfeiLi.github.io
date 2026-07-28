@@ -3,7 +3,7 @@
 {% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
 <div class="page__footer-follow">
   <ul class="social-icons">
-    <li><strong>{% if page.lang contains "zh" %}联系与学术档案：{% else %}Contact &amp; Profiles:{% endif %}</strong></li>
+    <li><strong>{% if page.lang contains "zh" %}联系方式与学术主页：{% else %}Contact &amp; Profiles:{% endif %}</strong></li>
     {% if site.author.github %}
       <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
     {% endif %}
@@ -18,9 +18,17 @@
 {% endif %}
 
 <div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.
-  {% if page.lang contains "zh" %}使用{% else %}Built with{% endif %}
-  <a href="https://jekyllrb.com" rel="nofollow noopener noreferrer" target="_blank">Jekyll</a>
-  {% if page.lang contains "zh" %}与{% else %}and{% endif %}
-  <a href="https://github.com/academicpages/academicpages.github.io" target="_blank" rel="noopener noreferrer">AcademicPages</a>.
+  {% if page.lang contains "zh" %}
+    &copy; {{ site.time | date: '%Y' }} 李梦飞。基于
+    <a href="https://jekyllrb.com" rel="nofollow noopener noreferrer" target="_blank">Jekyll</a>
+    和
+    <a href="https://github.com/academicpages/academicpages.github.io" target="_blank" rel="noopener noreferrer">AcademicPages</a>
+    构建。
+  {% else %}
+    &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.
+    Built with
+    <a href="https://jekyllrb.com" rel="nofollow noopener noreferrer" target="_blank">Jekyll</a>
+    and
+    <a href="https://github.com/academicpages/academicpages.github.io" target="_blank" rel="noopener noreferrer">AcademicPages</a>.
+  {% endif %}
 </div>

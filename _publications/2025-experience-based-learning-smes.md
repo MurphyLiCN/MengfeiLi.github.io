@@ -11,7 +11,7 @@ collection: publications
 category: under-review
 permalink: /publication/2025-experience-based-learning-smes
 excerpt: "Examines how hands-on experience changes manufacturing efficiency and consistency in SMEs and how learning-aware planning improves operating performance."
-excerpt_zh: "研究实践经验如何影响中小制造企业的运营效率与一致性，并将经验学习纳入运营规划。"
+excerpt_zh: "研究累积生产经验如何影响中小制造企业的制造效率与一致性，以及将经验学习纳入运营规划如何改善经营绩效。"
 status: under-review
 status_label: "Under second-round review"
 venue: "Management Science"

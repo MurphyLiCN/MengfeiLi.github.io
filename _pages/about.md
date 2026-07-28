@@ -67,11 +67,6 @@ redirect_from:
 
 <section class="home-section" aria-labelledby="presentations-heading">
   <h2 id="presentations-heading">Selected Presentations</h2>
-  {% assign selected_talks = site.talks | where: "presentation_type", "Conference presentation" | sort: "sort_date" | reverse %}
-  <ul class="home-compact-list">
-    {% for talk in selected_talks limit: 4 %}
-      <li><a href="{{ base_path }}{{ talk.url }}"><strong>{{ talk.venue }}</strong></a>, {{ talk.location }}, {{ talk.display_date }}</li>
-    {% endfor %}
-  </ul>
+  {% include selected-presentation-list.html limit=4 %}
   <p class="home-section__more"><a href="{{ base_path }}/talks/">Full presentations list</a></p>
 </section>

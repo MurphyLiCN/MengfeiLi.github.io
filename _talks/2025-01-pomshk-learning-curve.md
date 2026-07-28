@@ -8,7 +8,9 @@ permalink: /talks/2025-01-pomshk-learning-curve
 venue: "15th POMS-HK International Conference"
 sort_date: "2025-01"
 display_date: "January 2025"
+display_date_zh: "2025 年 1 月"
 location: "Hong Kong, China"
+location_zh: "中国香港"
 ---
 
 Presented by Mengfei Li at the 15th POMS-HK International Conference.

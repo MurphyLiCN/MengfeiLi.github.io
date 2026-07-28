@@ -1,0 +1,24 @@
+{% include base_path %}
+{% assign presentation_language = include.lang | default: "en" %}
+{% assign presentation_limit = include.limit | default: 4 %}
+{% assign selected_talks = site.talks | where: "presentation_type", "Conference presentation" | sort: "sort_date" | reverse %}
+<ul class="home-compact-list">
+  {% for talk in selected_talks limit: presentation_limit %}
+    {% assign related_publication = site.publications | where: "project_id", talk.paper_id | first %}
+    {% if presentation_language == "zh" %}
+      {% assign talk_venue = talk.venue_zh | default: talk.venue %}
+      {% assign talk_location = talk.location_zh | default: talk.location %}
+      {% assign talk_date = talk.display_date_zh | default: talk.display_date %}
+      {% if related_publication.title_zh %}
+        {% assign talk_title = related_publication.title_zh %}
+      {% else %}
+        {% assign talk_title = talk.title %}
+      {% endif %}
+      <li>
+        <a href="{{ base_path }}{{ talk.url }}"><strong>{{ talk_venue }}</strong></a>，{{ talk_location }}，{{ talk_date }}{% if include.show_title and related_publication %}；报告论文：<a href="{{ base_path }}{{ related_publication.url }}">《{{ talk_title }}》</a>{% endif %}。
+      </li>
+    {% else %}
+      <li><a href="{{ base_path }}{{ talk.url }}"><strong>{{ talk.venue }}</strong></a>, {{ talk.location }}, {{ talk.display_date }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>

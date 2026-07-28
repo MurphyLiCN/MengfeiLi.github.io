@@ -1,16 +1,17 @@
 ---
 title: "LLMs Simulate Survey Response for Joint Distribution of Multiple Questions"
-title_zh: "大语言模型模拟多问题联合分布的调查响应"
+title_zh: "大语言模型对多题项调查响应联合分布的模拟"
 authors:
   - "Ji Huang"
   - "Mengfei Li"
   - "Shuai Shao"
 author_note: "Authors listed alphabetically."
+author_note_zh: "作者按姓氏英文字母顺序排列。"
 collection: publications
 category: working-papers
 permalink: /publication/2025-llm-survey-joint-distribution
 excerpt: "Extends LLM-based survey simulation from marginal response distributions to joint distributions across multiple questions, with attention to reliability and validity."
-excerpt_zh: "将大语言模型调查模拟从单题边际分布扩展到多问题联合分布，并关注可靠性与效度。"
+excerpt_zh: "将基于大语言模型的调查模拟从单题响应的边际分布扩展至多题项响应的联合分布，并考察其信度与效度。"
 status: working-paper
 status_label: "Working paper"
 sort_order: 5

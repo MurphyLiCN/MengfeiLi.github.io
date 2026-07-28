@@ -4,7 +4,8 @@
     {% for award in site.data.awards limit: include.limit %}
       <li>
         {% if award_language == "zh" %}
-          {% if award.url %}<a href="{{ award.url }}" target="_blank" rel="noopener noreferrer"><strong>{{ award.title_zh }}</strong></a>{% else %}<strong>{{ award.title_zh }}</strong>{% endif %}，{{ award.organization_zh }}，{{ award.year }}{% if award.note_zh %}（{{ award.note_zh }}）{% endif %}。
+          {% assign award_year_zh = award.year | replace: "-", "—" | replace: ", ", "、" %}
+          {% if award.url %}<a href="{{ award.url }}" target="_blank" rel="noopener noreferrer"><strong>{{ award.title_zh }}</strong></a>{% else %}<strong>{{ award.title_zh }}</strong>{% endif %}，{{ award.organization_zh }}，{{ award_year_zh }} 年{% if award.note_zh %}（{{ award.note_zh }}）{% endif %}。
         {% else %}
           {% if award.url %}<a href="{{ award.url }}" target="_blank" rel="noopener noreferrer"><strong>{{ award.title_en }}</strong></a>{% else %}<strong>{{ award.title_en }}</strong>{% endif %}, {{ award.organization_en }}, {{ award.year }}{% if award.note_en %} ({{ award.note_en }}){% endif %}.
         {% endif %}
@@ -14,7 +15,8 @@
     {% for award in site.data.awards %}
       <li>
         {% if award_language == "zh" %}
-          {% if award.url %}<a href="{{ award.url }}" target="_blank" rel="noopener noreferrer"><strong>{{ award.title_zh }}</strong></a>{% else %}<strong>{{ award.title_zh }}</strong>{% endif %}，{{ award.organization_zh }}，{{ award.year }}{% if award.note_zh %}（{{ award.note_zh }}）{% endif %}。
+          {% assign award_year_zh = award.year | replace: "-", "—" | replace: ", ", "、" %}
+          {% if award.url %}<a href="{{ award.url }}" target="_blank" rel="noopener noreferrer"><strong>{{ award.title_zh }}</strong></a>{% else %}<strong>{{ award.title_zh }}</strong>{% endif %}，{{ award.organization_zh }}，{{ award_year_zh }} 年{% if award.note_zh %}（{{ award.note_zh }}）{% endif %}。
         {% else %}
           {% if award.url %}<a href="{{ award.url }}" target="_blank" rel="noopener noreferrer"><strong>{{ award.title_en }}</strong></a>{% else %}<strong>{{ award.title_en }}</strong>{% endif %}, {{ award.organization_en }}, {{ award.year }}{% if award.note_en %} ({{ award.note_en }}){% endif %}.
         {% endif %}
