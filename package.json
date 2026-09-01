@@ -16,8 +16,8 @@
     "node": "24.18.0"
   },
   "devDependencies": {
-    "@axe-core/playwright": "^4.12.1",
-    "@playwright/test": "^1.61.1",
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.62.1",
     "lighthouse": "^13.4.1",
     "onchange": "^7.1.0",
     "uglify-js": "^3.17.4"
